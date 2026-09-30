@@ -222,15 +222,17 @@ export default function CareerServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl border border-surface-border bg-white p-6 sm:p-10 shadow-card">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 relative h-64 sm:h-80 w-full rounded-2xl overflow-hidden bg-slate-100 border border-surface-border">
+              <div className="lg:col-span-5 relative aspect-[3/4] max-w-sm sm:max-w-md mx-auto w-full rounded-2xl overflow-hidden bg-slate-100 border border-surface-border shadow-md">
                 <Image
                   src="/assets/career-services/ats-global-flags-banner.jpeg"
                   alt="ATS Friendly CV Formats - Canada, New Zealand, Europass, GCC, India"
                   fill
-                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-contain"
+                  priority
                 />
               </div>
-              <div className="lg:col-span-6 space-y-4">
+              <div className="lg:col-span-7 space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-light text-vivid-blue border border-vivid-blue/20">
                   <Globe className="w-3.5 h-3.5" />
                   <span>INTERNATIONAL COMPLIANCE SUITE</span>
@@ -504,17 +506,18 @@ export default function CareerServicesPage() {
                 <div>
                   <div
                     onClick={() => setActiveModalSample(svc.image)}
-                    className="relative h-56 w-full bg-slate-100 cursor-pointer overflow-hidden group"
+                    className="relative aspect-square w-full bg-slate-50 cursor-pointer overflow-hidden group p-2 border-b border-surface-border"
                   >
                     <Image
                       src={svc.image}
                       alt={svc.name}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 380px"
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-dark-950/20 group-hover:bg-transparent transition-colors flex items-center justify-center">
-                      <span className="opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-white text-dark-950 font-bold text-[11px] shadow-sm">
-                        View Poster
+                    <div className="absolute inset-0 bg-dark-950/10 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                      <span className="opacity-0 group-hover:opacity-100 transition-opacity px-3.5 py-1.5 rounded-full bg-white text-dark-950 font-bold text-[11px] shadow-md border border-slate-200">
+                        View Full Poster
                       </span>
                     </div>
                   </div>

@@ -63,16 +63,24 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Official ILM-ON Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-10 w-40 sm:h-11 sm:w-44">
+          {/* Official ILM-ON Logo: Vivid Blue + White, high-contrast, clearly visible */}
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
+            <div className="relative h-10 w-10 sm:h-11 sm:w-11 rounded-xl overflow-hidden shadow-sm flex-shrink-0 bg-vivid-blue border border-vivid-blue/20 transition-transform group-hover:scale-105">
               <Image
-                src="/assets/brand/ilm-on-logo.png"
-                alt="ILM-ON Digital Solutions"
+                src="/assets/brand/ilm-on-official-badge.png"
+                alt="ILM-ON Digital Solutions Official Logo"
                 fill
                 priority
-                className="object-contain object-left"
+                className="object-cover"
               />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-base sm:text-lg font-black tracking-tight text-dark-950 leading-tight">
+                ILM-ON
+              </span>
+              <span className="text-[10px] sm:text-[10.5px] font-bold tracking-widest text-vivid-blue uppercase leading-none">
+                Digital Solutions
+              </span>
             </div>
           </Link>
 
