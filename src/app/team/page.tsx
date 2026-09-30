@@ -6,7 +6,7 @@ import { Award, Users, CheckCircle2, ArrowRight, ShieldCheck, Mail, Phone, Exter
 const teamMembers = [
   {
     name: 'Badusha Salih',
-    role: 'Founder & CEO',
+    role: 'Founder, Director & CEO',
     division: 'Executive Strategy & Global Operations',
     image: '/assets/team/badusha-salih-founder.png',
     location: 'Dubai, UAE & India',

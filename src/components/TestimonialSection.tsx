@@ -80,18 +80,18 @@ export default function TestimonialSection() {
               <span className="text-[11px] text-teal-accent font-bold">Verified Feedback</span>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden aspect-[9/16] max-h-[500px] w-full mx-auto bg-black shadow-inner">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] sm:aspect-square lg:aspect-[4/5] max-h-[500px] w-full mx-auto bg-white border border-surface-border shadow-inner">
               <video
                 src="/assets/reviews/verified-clients-reel.mp4"
                 controls
                 playsInline
-                className="w-full h-full object-cover"
-                poster="/assets/hero/we-build-careers-banner.png"
+                className="w-full h-full object-contain bg-white"
+                poster="/assets/reviews/client-showcase-three-models.png"
               />
             </div>
             <div className="mt-4 text-center">
               <p className="text-xs text-slate-600 font-medium">
-                Verified reviews from Soufian, Ameer, Mohammad, Sabarwal, Renuka, and Akhila.
+                Verified candidate and executive reviews from UAE, GCC, and International placements.
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import NextImage from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { ArrowRight, ChevronDown, Check } from 'lucide-react';
 import Link from 'next/link';
@@ -20,20 +21,24 @@ export default function ScrollAnimationCanvas() {
     offset: ['start start', 'end end'],
   });
 
+  // Apple-inspired smooth scroll interpolation & subtle parallax
+  const canvasScale = useTransform(scrollYProgress, [0, 0.4], [1, 1.03]);
+
   // Story step transitions
   const heroOpacity = useTransform(scrollYProgress, [0, 0.18, 0.28], [1, 1, 0]);
-  const heroY = useTransform(scrollYProgress, [0, 0.28], [0, -20]);
+  const heroY = useTransform(scrollYProgress, [0, 0.28], [0, -24]);
+  const heroScale = useTransform(scrollYProgress, [0, 0.28], [1, 0.98]);
 
   const step1Opacity = useTransform(scrollYProgress, [0.28, 0.36, 0.48, 0.56], [0, 1, 1, 0]);
-  const step1Y = useTransform(scrollYProgress, [0.28, 0.36, 0.56], [20, 0, -20]);
+  const step1Y = useTransform(scrollYProgress, [0.28, 0.36, 0.56], [24, 0, -24]);
 
   const step2Opacity = useTransform(scrollYProgress, [0.56, 0.64, 0.76, 0.84], [0, 1, 1, 0]);
-  const step2Y = useTransform(scrollYProgress, [0.56, 0.64, 0.84], [20, 0, -20]);
+  const step2Y = useTransform(scrollYProgress, [0.56, 0.64, 0.84], [24, 0, -24]);
 
   const step3Opacity = useTransform(scrollYProgress, [0.84, 0.92, 1], [0, 1, 1]);
-  const step3Y = useTransform(scrollYProgress, [0.84, 0.92], [20, 0]);
+  const step3Y = useTransform(scrollYProgress, [0.84, 0.92], [24, 0]);
 
-  // Preload frames progressively
+  // Preload frames progressively with Frame 1 as exact Main Landing page - Hero section 1st Frame image
   useEffect(() => {
     let isCancelled = false;
     const images: HTMLImageElement[] = [];
@@ -44,30 +49,50 @@ export default function ScrollAnimationCanvas() {
     const loadFrame = (index: number): Promise<void> => {
       return new Promise((resolve) => {
         const img = new Image();
-        img.src = `/assets/scroll-sequence/ezgif-frame-${padZero(index + 1)}.png`;
+        if (index === 0) {
+          // Strictly Frame 1: Main Landing page - Hero section 1st Frame image
+          img.src = '/assets/hero/Main%20Landing%20Page%20-%20Hero%20Section%201st%20frame%20image.png';
+        } else {
+          img.src = `/assets/scroll-sequence/ezgif-frame-${padZero(index + 1)}.png`;
+        }
         img.onload = () => {
           images[index] = img;
           resolve();
         };
         img.onerror = () => {
-          resolve();
+          // Fallback to pre-rendered 1080p frame 1 if needed
+          if (index === 0) {
+            const fallback = new Image();
+            fallback.src = '/assets/scroll-sequence/ezgif-frame-001.png';
+            fallback.onload = () => {
+              images[0] = fallback;
+              resolve();
+            };
+            fallback.onerror = () => resolve();
+          } else {
+            resolve();
+          }
         };
       });
     };
 
     const loadInitialBatch = async () => {
-      const initialPromises = [];
-      for (let i = 0; i < 15; i++) {
-        initialPromises.push(loadFrame(i));
-      }
-      await Promise.all(initialPromises);
+      // Prioritize frame 0 immediately
+      await loadFrame(0);
       if (!isCancelled) {
         setIsReady(true);
         renderFrame(0);
       }
 
+      // Next load early frames for smooth scroll responsiveness
+      const initialPromises = [];
+      for (let i = 1; i < 20; i++) {
+        initialPromises.push(loadFrame(i));
+      }
+      await Promise.all(initialPromises);
+
       // Progressively load remaining frames
-      for (let i = 15; i < TOTAL_FRAMES; i++) {
+      for (let i = 20; i < TOTAL_FRAMES; i++) {
         if (isCancelled) break;
         await loadFrame(i);
       }
@@ -113,7 +138,14 @@ export default function ScrollAnimationCanvas() {
     ctx.save();
     ctx.scale(dpr, dpr);
 
-    const imgRatio = img.width / img.height;
+    // Support both 13500x4219 master hero image and standard 1920x1080 frames with exact alignment
+    const isMaster13k = img.width > 5000;
+    const srcX = isMaster13k ? 3000 : 0;
+    const srcY = 0;
+    const srcW = isMaster13k ? 7500 : img.width;
+    const srcH = isMaster13k ? 4219 : img.height;
+
+    const imgRatio = srcW / srcH;
     const canvasRatio = width / height;
 
     // Navbar clearance so people's heads never get covered by the fixed header
@@ -137,7 +169,11 @@ export default function ScrollAnimationCanvas() {
     }
 
     ctx.clearRect(0, 0, width, height);
-    ctx.drawImage(img, offsetX, offsetY, renderWidth, renderHeight);
+    if (isMaster13k) {
+      ctx.drawImage(img, srcX, srcY, srcW, srcH, offsetX, offsetY, renderWidth, renderHeight);
+    } else {
+      ctx.drawImage(img, offsetX, offsetY, renderWidth, renderHeight);
+    }
 
     // Subtle cinematic lighting: crystal clear over faces/heads, gentle darkening at bottom for button/text contrast
     const grad = ctx.createLinearGradient(0, 0, 0, height);
@@ -181,28 +217,39 @@ export default function ScrollAnimationCanvas() {
     <div ref={containerRef} className="relative h-[320vh] bg-dark-950">
       {/* Sticky Fullscreen Frame */}
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-end">
-        {/* Hardware-Accelerated Canvas */}
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
-          style={{ opacity: isReady ? 1 : 0 }}
-        />
+        {/* Instant Frame 1 Visual: Strictly Main Landing page - Hero section 1st Frame image */}
+        <div 
+          className="absolute inset-0 pointer-events-none transition-opacity duration-700 overflow-hidden"
+          style={{ opacity: isReady ? 0 : 1 }}
+        >
+          <NextImage
+            src="/assets/hero/Main Landing Page - Hero Section 1st frame image.png"
+            alt="ILM-ON Digital Solutions - Career, Recruitment, Digital Growth"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent" />
+        </div>
 
-        {/* Initial Loading State */}
-        {!isReady && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-dark-950 z-20">
-            <div className="w-8 h-8 rounded-full border-2 border-neutral-700 border-t-vivid-blue animate-spin mb-3" />
-            <span className="text-xs uppercase tracking-widest text-slate-400 font-semibold">
-              Loading Presentation...
-            </span>
-          </div>
-        )}
+        {/* Hardware-Accelerated Canvas with Apple-grade parallax scale */}
+        <motion.div 
+          style={{ scale: canvasScale }}
+          className="absolute inset-0 w-full h-full"
+        >
+          <canvas
+            ref={canvasRef}
+            className="w-full h-full object-cover transition-opacity duration-500"
+            style={{ opacity: isReady ? 1 : 0 }}
+          />
+        </motion.div>
 
         {/* Storytelling Overlays: Positioned with vertical breathing room so faces are 100% visible */}
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 pointer-events-none">
           {/* Main Hero: Scroll-linked subtle motion */}
           <motion.div
-            style={{ opacity: heroOpacity, y: heroY }}
+            style={{ opacity: heroOpacity, y: heroY, scale: heroScale }}
             className="text-center max-w-3xl mx-auto pointer-events-auto"
           >
             {/* Small Eyebrow */}

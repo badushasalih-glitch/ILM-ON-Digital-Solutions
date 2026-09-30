@@ -18,10 +18,7 @@ export default function HomePage() {
       {/* 2. Global Metric Trust Bar (Animated Counters on Viewport Entry) */}
       <StatisticsCounter />
 
-      {/* 3. Authentic Company Origin & Expansion (OUR STORY / OUR JOURNEY) */}
-      <OurStorySection />
-
-      {/* 4. Three Core Divisions */}
+      {/* 3. Three Core Divisions */}
       <DivisionCards />
 
       {/* 5. Gulf Career Acceleration & Multi-Platform Profile Optimization Suite */}
@@ -216,17 +213,29 @@ export default function HomePage() {
       {/* 5. Authentic Panoramic Studio Feature: WE BUILD CAREERS NOT JUST CVS */}
       <section className="py-20 bg-surface-light border-t border-surface-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-3xl overflow-hidden border border-surface-border shadow-elevated bg-dark-950">
-            {/* Panoramic Banner */}
-            <div className="relative w-full h-[280px] sm:h-[400px] lg:h-[480px]">
-              <Image
-                src="/assets/hero/we-build-careers-banner.png"
-                alt="WE BUILD CAREERS NOT JUST CVS - ILM-ON Digital Solutions Team Banner"
-                fill
-                className="object-cover object-center"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent lg:hidden" />
+          <div className="relative rounded-3xl overflow-hidden border border-surface-border shadow-elevated bg-white">
+            {/* Studio Presentation: Clean 3-Model Focus on Mobile, Full Panoramic Studio Banner on Tablet/Desktop */}
+            <div className="relative w-full bg-white">
+              {/* Mobile View (< 640px): Dedicated 3-Model Natural Focus */}
+              <div className="block sm:hidden relative w-full aspect-[4/3] bg-white">
+                <Image
+                  src="/assets/reviews/client-showcase-three-models.png"
+                  alt="We Build Careers Not Just CVs - ILM-ON Digital Solutions"
+                  fill
+                  className="object-contain object-center"
+                  priority
+                />
+              </div>
+              {/* Tablet & Desktop View (>= 640px): Full Panoramic Studio Banner (Zero Cropped Heads or Feet) */}
+              <div className="hidden sm:block relative w-full aspect-[3.2/1] bg-white">
+                <Image
+                  src="/assets/hero/we-build-careers-banner-new.png"
+                  alt="WE BUILD CAREERS NOT JUST CVS - ILM-ON Digital Solutions Team Banner"
+                  fill
+                  className="object-contain object-center"
+                  priority
+                />
+              </div>
             </div>
 
             {/* Bottom Content Bar */}
@@ -266,10 +275,13 @@ export default function HomePage() {
       {/* 6. Team & Leadership (Authentic Real Portraits) */}
       <TeamSection />
 
-      {/* 7. Verified Social Proof & Real Client Testimonials */}
+      {/* 7. Verified Social Proof & Real Client Testimonials (Proof of Excellence in Every Trajectory) */}
       <TestimonialSection />
 
-      {/* 8. Final Corporate Closing CTA */}
+      {/* 8. OUR JOURNEY (Positioned strictly at the very bottom, after Proof of Excellence) */}
+      <OurStorySection />
+
+      {/* 9. Final Corporate Closing CTA */}
       <section className="py-24 bg-dark-950 text-white relative overflow-hidden border-t border-white/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-blue/20 text-vivid-blue border border-vivid-blue/30 mb-6">

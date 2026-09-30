@@ -3,12 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { ArrowRight, Check, User, Users } from 'lucide-react';
 
 const teamMembers = [
   {
     name: 'Badusha Salih',
-    title: 'Founder & CEO',
+    title: 'Founder, Director & CEO',
     division: 'Executive Strategy & Global Operations',
     description:
       'Directing the vision of ILM-ON Digital Solutions with 5+ years of corporate sales, marketing, and business growth expertise to empower candidates and companies worldwide.',
@@ -71,8 +72,12 @@ export default function TeamSection() {
         {/* Clean Natural Portraits - No Heavy Frames */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {teamMembers.map((member, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="bg-white border border-surface-border/80 rounded-2xl p-5 flex flex-col justify-between shadow-card hover:shadow-elevated transition-all duration-300"
             >
               <div>
@@ -108,7 +113,7 @@ export default function TeamSection() {
                 <span>ILM-ON Leadership</span>
                 <span className="text-vivid-blue font-semibold">Dubai & India</span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 

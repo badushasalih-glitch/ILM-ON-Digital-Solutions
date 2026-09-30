@@ -57,54 +57,64 @@ const storyMilestones = [
 
 export default function OurStorySection() {
   return (
-    <section className="py-24 bg-white border-b border-surface-border relative overflow-hidden">
+    <section className="py-24 bg-white border-t border-surface-border relative overflow-hidden" id="our-journey">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        {/* Section Header: Strictly OUR JOURNEY */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-light text-vivid-blue border border-vivid-blue/20 mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>OUR STORY / OUR JOURNEY</span>
+            <span>AUTHENTIC EXPANSION</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark-950 tracking-tight leading-tight">
-            Built From Experience. <br className="hidden sm:inline" />
-            <span className="text-vivid-blue">Driven by Purpose.</span>
+            OUR JOURNEY
           </h2>
           <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            ILM-ON Digital Solutions was built from real-world experience, professional expertise, and a genuine passion for helping people and businesses switch on their full potential.
+            Built from real-world GCC experience, professional expertise, and a genuine passion for helping people and businesses switch on their full potential.
           </p>
-        </div>
+        </motion.div>
 
         {/* 2-Column Story Journey Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Visual Story Card */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="relative rounded-3xl overflow-hidden border border-surface-border shadow-elevated bg-slate-900 group">
-              <div className="relative aspect-[4/5] w-full">
+          {/* Left Column: Visual Story Card with Full Usable Director Portrait Graphic */}
+          <motion.div 
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 space-y-6"
+          >
+            <div className="relative rounded-3xl overflow-hidden border border-surface-border shadow-elevated bg-white group">
+              {/* Full Usable Graphic: Exact Aspect Ratio, Zero Cropping of Director's Face, Beard, or Typography */}
+              <div className="relative aspect-[4269/3794] w-full bg-slate-50">
                 <Image
                   src="/assets/team/about-founder-infographic.png"
-                  alt="ILM-ON Digital Solutions Journey & Founder Story"
+                  alt="Meet Our Director - Badusha Salih, Founder & CEO of ILM-ON Digital Solutions"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 450px"
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 100vw, 520px"
+                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.01]"
                   priority
                 />
-                {/* Subtle gradient vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent" />
               </div>
 
-              {/* Floating Bottom Card Over Visual */}
-              <div className="absolute bottom-4 inset-x-4 p-5 rounded-2xl bg-dark-950/90 backdrop-blur-md border border-white/15 text-white">
+              {/* Clean Director Overview Below Image: 100% Unobstructed Visual */}
+              <div className="p-6 bg-surface-light border-t border-surface-border">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-widest text-teal-accent">
-                    FOUNDED ON TRUST
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-vivid-blue">
+                    EXECUTIVE LEADERSHIP
                   </span>
-                  <span className="text-[10px] text-slate-400">UAE • India • Global</span>
+                  <span className="text-[10px] text-slate-500 font-semibold">UAE &amp; India Network</span>
                 </div>
-                <h4 className="text-base font-bold text-white leading-snug">
-                  &ldquo;Turning your career and business vision ON.&rdquo;
+                <h4 className="text-base font-bold text-dark-950 leading-snug">
+                  Badusha Salih — Founder, Director &amp; CEO
                 </h4>
-                <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                  From assisting roommates in Dubai to delivering international-standard career and digital growth for clients across 10+ countries.
+                <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                  Directing ILM-ON&apos;s strategic vision with 5+ years in corporate sales, digital marketing, and international recruitment advisory.
                 </p>
               </div>
             </div>
@@ -121,18 +131,22 @@ export default function OurStorySection() {
               </div>
               <div className="p-3.5 rounded-2xl bg-surface-light border border-surface-border text-center">
                 <div className="text-lg font-black text-dark-950">Dual Hub</div>
-                <div className="text-[10px] font-bold text-slate-600 uppercase mt-0.5">India & Dubai</div>
+                <div className="text-[10px] font-bold text-slate-600 uppercase mt-0.5">India &amp; Dubai</div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right Column: Progressive Step Timeline */}
+          {/* Right Column: Progressive Step Timeline with Apple-style smooth reveal */}
           <div className="lg:col-span-7 space-y-4">
             {storyMilestones.map((m, idx) => {
               const Icon = m.icon;
               return (
-                <div
+                <motion.div
                   key={m.step}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
                   className="p-6 rounded-2xl bg-surface-light border border-surface-border transition-all duration-200 hover:border-slate-300 hover:shadow-subtle group"
                 >
                   <div className="flex items-start gap-4">
@@ -156,7 +170,7 @@ export default function OurStorySection() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
 

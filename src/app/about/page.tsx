@@ -46,24 +46,26 @@ export default function AboutPage() {
       <section className="px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Founder Studio Portrait */}
+            {/* Founder Studio Portrait - Full Usable Portrait Without Overlap */}
             <div className="lg:col-span-5">
-              <div className="relative aspect-[3/4] w-full max-w-sm mx-auto rounded-3xl overflow-hidden bg-slate-50 shadow-card">
-                <Image
-                  src="/assets/team/badusha-salih-founder.png"
-                  alt="Badusha Salih - Founder & CEO ILM-ON Digital Solutions"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-dark-950 text-white shadow-sm">
-                    Founder & CEO
-                  </span>
+              <div className="w-full max-w-sm mx-auto rounded-3xl overflow-hidden bg-white border border-surface-border shadow-card">
+                <div className="relative aspect-[3/4] w-full bg-slate-50">
+                  <Image
+                    src="/assets/team/badusha-salih-founder.png"
+                    alt="Badusha Salih - Founder, Director & CEO ILM-ON Digital Solutions"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-dark-950 text-white shadow-sm">
+                      Founder, Director &amp; CEO
+                    </span>
+                  </div>
                 </div>
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-sm border border-surface-border shadow-sm">
+                <div className="p-5 bg-white border-t border-surface-border">
                   <h3 className="text-lg font-bold text-dark-950">Badusha Salih</h3>
-                  <p className="text-xs text-vivid-blue font-semibold">5+ Years Corporate Sales & Growth Strategy</p>
+                  <p className="text-xs text-vivid-blue font-semibold mt-0.5">Founder, Director &amp; CEO • 5+ Years Corporate Sales &amp; Growth Strategy</p>
                 </div>
               </div>
             </div>
