@@ -9,17 +9,27 @@ export const metadata: Metadata = {
   description: 'ILM-ON Digital Solutions is an international career and business accelerator operating across Dubai, UAE and India. Specializing in ATS-Friendly Resumes, Gulf Executive Recruitment, and High-Performance Digital Marketing.',
   keywords: [
     'ILM-ON Digital Solutions',
+    'Career Services',
+    'Recruitment',
+    'ADS ON',
+    'Digital Marketing',
+    'GCC recruitment',
+    'UAE recruitment',
+    'Saudi Arabia recruitment',
+    'Qatar recruitment',
+    'Kuwait recruitment',
+    'Bahrain recruitment',
+    'Oman recruitment',
+    'ATS CV Resume services',
+    'LinkedIn profile optimization',
+    'GCC jobs',
+    'talent sourcing',
+    'candidate recruitment',
+    'Meta Ads',
+    'Google Ads',
+    'SEO',
+    'social media marketing',
     'Switch On Your Potential',
-    'ATS Friendly CV Dubai',
-    'Gulf Recruitment Agency',
-    'Naukri Certified HR UAE',
-    'Career Services Kerala',
-    'Digital Marketing Agency Dubai',
-    'Meta Ads Specialists',
-    'International CV Formats',
-    'Badusha Salih',
-    'Fathima Shefeek',
-    'Mohamed Sanif',
   ],
   authors: [{ name: 'ILM-ON Digital Solutions' }],
   metadataBase: new URL('https://www.ilmondigitalsolutions.online'),
@@ -51,9 +61,57 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.ilmondigitalsolutions.online/#organization',
+        name: 'ILM-ON Digital Solutions',
+        url: 'https://www.ilmondigitalsolutions.online',
+        logo: 'https://www.ilmondigitalsolutions.online/assets/brand/ilm-on-logo.png',
+        slogan: 'Switch On Your Potential',
+        description: 'ILM-ON Digital Solutions provides dedicated Career Services, Recruitment Support & Consultancy, and Ads & Digital Marketing across India and the GCC.',
+        sameAs: [
+          'https://www.instagram.com/ilmon_digitalsolutions/',
+          'https://www.linkedin.com/company/ilm-on-digital-solutions/',
+        ],
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            telephone: '+91-9292940652',
+            contactType: 'customer service',
+            areaServed: ['IN', 'AE', 'SA', 'QA', 'KW', 'BH', 'OM'],
+            availableLanguage: ['English', 'Hindi', 'Malayalam', 'Arabic'],
+          },
+          {
+            '@type': 'ContactPoint',
+            telephone: '+971-562528518',
+            contactType: 'recruitment desk',
+            areaServed: ['AE', 'SA', 'QA', 'KW', 'BH', 'OM'],
+            availableLanguage: ['English', 'Arabic', 'Hindi', 'Malayalam'],
+          },
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://www.ilmondigitalsolutions.online/#website',
+        url: 'https://www.ilmondigitalsolutions.online',
+        name: 'ILM-ON Digital Solutions',
+        publisher: {
+          '@id': 'https://www.ilmondigitalsolutions.online/#organization',
+        },
+      },
+    ],
+  };
+
   return (
     <html lang="en">
       <body className="bg-surface-light text-dark-950 antialiased selection:bg-vivid-blue selection:text-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <Navbar />
         <main className="min-h-screen">
           {children}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, ArrowRight, Check } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight, Check, Instagram, Linkedin, MessageSquare } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -60,6 +60,37 @@ export default function Footer() {
             </p>
             <div className="text-xs font-bold text-vivid-blue tracking-wide uppercase pt-1">
               CAREER • RECRUITMENT • DIGITAL GROWTH
+            </div>
+
+            {/* Official Social Media Links */}
+            <div className="flex items-center gap-3 pt-3">
+              <a
+                href="https://www.instagram.com/ilmon_digitalsolutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ILM-ON Digital Solutions Instagram"
+                className="w-9 h-9 rounded-xl bg-white/10 hover:bg-vivid-blue hover:text-white text-slate-300 border border-white/10 flex items-center justify-center transition-all shadow-xs"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ilm-on-digital-solutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ILM-ON Digital Solutions LinkedIn"
+                className="w-9 h-9 rounded-xl bg-white/10 hover:bg-vivid-blue hover:text-white text-slate-300 border border-white/10 flex items-center justify-center transition-all shadow-xs"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href="https://wa.me/919292940652"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ILM-ON Digital Solutions WhatsApp"
+                className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#25D366] hover:text-white text-slate-300 border border-white/10 flex items-center justify-center transition-all shadow-xs"
+              >
+                <MessageSquare className="w-4 h-4" />
+              </a>
             </div>
           </div>
 

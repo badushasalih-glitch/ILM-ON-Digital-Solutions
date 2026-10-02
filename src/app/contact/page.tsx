@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, MessageSquare, CheckCircle2, Clock, Globe } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, MessageSquare, CheckCircle2, Clock, Globe, Instagram, Linkedin } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -92,6 +92,33 @@ export default function ContactPage() {
                       www.ilmondigitalsolutions.online
                     </a>
                   </div>
+                </div>
+              </div>
+
+              {/* Official Social Media Channels */}
+              <div className="p-5 rounded-2xl bg-surface-light border border-surface-border">
+                <div className="text-xs font-bold uppercase tracking-wider text-vivid-blue mb-2.5">
+                  Official Social Channels
+                </div>
+                <div className="grid grid-cols-2 gap-2.5">
+                  <a
+                    href="https://www.instagram.com/ilmon_digitalsolutions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-surface-border hover:border-vivid-blue text-xs font-bold text-dark-950 hover:text-vivid-blue transition-all shadow-xs"
+                  >
+                    <Instagram className="w-4 h-4 text-pink-600 shrink-0" />
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ilm-on-digital-solutions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-surface-border hover:border-vivid-blue text-xs font-bold text-dark-950 hover:text-vivid-blue transition-all shadow-xs"
+                  >
+                    <Linkedin className="w-4 h-4 text-[#0A66C2] shrink-0" />
+                    <span>LinkedIn</span>
+                  </a>
                 </div>
               </div>
 

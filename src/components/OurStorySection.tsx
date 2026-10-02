@@ -90,11 +90,11 @@ export default function OurStorySection() {
             className="lg:col-span-5 space-y-6"
           >
             <div className="relative rounded-3xl overflow-hidden border border-surface-border shadow-elevated bg-white group">
-              {/* Full Usable Graphic: Exact Aspect Ratio, Zero Cropping of Director's Face, Beard, or Typography */}
-              <div className="relative aspect-[4269/3794] w-full bg-slate-50">
+              {/* Full Usable Graphic: Exact Aspect Ratio, Zero Cropping of Founder's Face, Beard, or Typography */}
+              <div className="relative aspect-[3375/4219] w-full bg-slate-50">
                 <Image
-                  src="/assets/team/about-founder-infographic.png"
-                  alt="Meet Our Director - Badusha Salih, Founder & CEO of ILM-ON Digital Solutions"
+                  src="/assets/team/MEET THE FOUNDER - ILM ON.png"
+                  alt="Meet The Founder - Badusha Salih, Founder & CEO of ILM-ON Digital Solutions"
                   fill
                   sizes="(max-width: 1024px) 100vw, 520px"
                   className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.01]"
@@ -102,7 +102,7 @@ export default function OurStorySection() {
                 />
               </div>
 
-              {/* Clean Director Overview Below Image: 100% Unobstructed Visual */}
+              {/* Clean Founder Overview Below Image: 100% Unobstructed Visual */}
               <div className="p-6 bg-surface-light border-t border-surface-border">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-vivid-blue">

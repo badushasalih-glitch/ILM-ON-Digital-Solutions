@@ -5,6 +5,7 @@ import ScrollAnimationCanvas from '@/components/ScrollAnimationCanvas';
 import StatisticsCounter from '@/components/StatisticsCounter';
 import OurStorySection from '@/components/OurStorySection';
 import DivisionCards from '@/components/DivisionCards';
+import CandidatesHiredSlider from '@/components/CandidatesHiredSlider';
 import TeamSection from '@/components/TeamSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import { ArrowRight, CheckCircle2, Shield, Globe, Sparkles, Building2, MapPin, Award } from 'lucide-react';
@@ -20,6 +21,9 @@ export default function HomePage() {
 
       {/* 3. Three Core Divisions */}
       <DivisionCards />
+
+      {/* 4. GCC Companies / Candidates Hired In Carousel */}
+      <CandidatesHiredSlider />
 
       {/* 5. Gulf Career Acceleration & Multi-Platform Profile Optimization Suite */}
       <section className="py-24 bg-white border-t border-surface-border relative overflow-hidden">

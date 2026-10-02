@@ -15,6 +15,9 @@ import {
   Search,
   Check,
   Award,
+  Instagram,
+  Linkedin,
+  MessageSquare,
 } from 'lucide-react';
 
 type Currency = 'INR' | 'AED' | 'USD';
@@ -124,38 +127,134 @@ export default function CareerServicesPage() {
   const [activeModalSample, setActiveModalSample] = useState<string | null>(null);
 
   return (
-    <div className="pt-28 pb-20 bg-surface-light min-h-screen text-dark-950">
-      {/* 1. Hero Header */}
-      <section className="px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-light text-vivid-blue border border-vivid-blue/20 mb-4">
-            <FileText className="w-3.5 h-3.5" />
-            <span>DIVISION 01 • CAREER ARCHITECTURE</span>
-          </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-dark-950 tracking-tight">
-            ATS-Friendly CV Within 24 Hours. <br />
-            <span className="text-vivid-blue">Engineered for International Shortlists.</span>
-          </h1>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Stop losing job opportunities to automated parsing bots. We construct precision-engineered ATS resumes and LinkedIn profiles tailored for Canada, New Zealand, Europe, the GCC, and India.
-          </p>
+    <div className="pt-24 pb-20 bg-surface-light min-h-screen text-dark-950 overflow-x-hidden">
+      {/* 1. Hero Header — Official Career Services Sub-Brand */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-16 relative overflow-hidden bg-white border-b border-surface-border">
+        {/* Subtle ambient light */}
+        <div className="absolute top-0 right-1/4 w-[500px] h-[350px] bg-vivid-blue/5 rounded-full blur-[100px] pointer-events-none" />
 
-          <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
-            <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20get%20my%20CV%20rebuilt%20today."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all"
-            >
-              <span>Get Your CV Within 24 Hours</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-            <a
-              href="#pricing"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-white text-dark-950 border border-surface-border hover:bg-slate-50 transition-all shadow-sm"
-            >
-              <span>View Packages & Pricing</span>
-            </a>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            {/* Left Column: Brand Hero Text */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-blue text-white shadow-xs">
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>DIVISION 01 • CAREER ARCHITECTURE</span>
+                </div>
+                <span className="text-xs font-semibold text-slate-500">
+                  A Dedicated Division of ILM-ON Digital Solutions
+                </span>
+              </div>
+
+              <div className="space-y-3">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-dark-950 tracking-tight leading-[1.08]">
+                  ATS-Friendly CV Within 24h. <br />
+                  <span className="text-vivid-blue">Engineered for International Shortlists.</span>
+                </h1>
+                <p className="text-base sm:text-lg text-slate-600 font-medium">
+                  Professional CVs • ATS Resumes • Cover Letters • LinkedIn, Indeed &amp; Naukri Gulf Optimization
+                </p>
+              </div>
+
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+                Stop losing job opportunities to automated parsing bots. We construct precision-engineered ATS resumes and executive profiles tailored for the GCC, UAE, Saudi Arabia, Qatar, Canada, New Zealand, Europe, and India.
+              </p>
+
+              {/* CTAs & Social Links */}
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                <a
+                  href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20get%20my%20CV%20rebuilt%20today."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all hover:scale-[1.02]"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  <span>Get Your CV Within 24 Hours</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+
+                <a
+                  href="#pricing"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-white text-dark-950 border border-surface-border hover:bg-slate-50 transition-all shadow-sm"
+                >
+                  <span>View Packages &amp; Pricing</span>
+                </a>
+
+                <div className="flex items-center gap-2 pl-2">
+                  <a
+                    href="https://www.instagram.com/ilmon_digitalsolutions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow ILM-ON on Instagram"
+                    className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-vivid-light text-slate-700 hover:text-vivid-blue border border-slate-200 flex items-center justify-center transition-colors"
+                  >
+                    <Instagram className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ilm-on-digital-solutions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Connect with ILM-ON on LinkedIn"
+                    className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-vivid-light text-slate-700 hover:text-vivid-blue border border-slate-200 flex items-center justify-center transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Official Career Services Sub-Brand Card */}
+            <div className="lg:col-span-5">
+              <div className="p-8 sm:p-10 rounded-3xl bg-dark-950 text-white border border-white/10 shadow-elevated relative overflow-hidden flex flex-col justify-between">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-vivid-blue/20 rounded-full blur-3xl pointer-events-none" />
+
+                <div className="space-y-6 relative z-10">
+                  {/* Official Career Services Logo Graphic */}
+                  <div className="relative h-16 w-56 bg-white/5 border border-white/10 rounded-2xl p-3 flex items-center justify-center">
+                    <Image
+                      src="/assets/brand/ILM - ON Career Services Official Logo NEW.png"
+                      alt="ILM-ON Career Services Official Logo"
+                      fill
+                      className="object-contain p-2"
+                      priority
+                    />
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-widest text-vivid-blue block mb-1">
+                      CAREER ARCHITECTURE &amp; BRANDING
+                    </span>
+                    <h3 className="text-2xl font-black text-white leading-tight">
+                      Switch On Your Career Potential
+                    </h3>
+                    <p className="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                      We don&apos;t just format documents. We architect your corporate brand to match international recruiter expectations and applicant tracking software standards.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2.5 pt-2 border-t border-white/10 text-xs text-slate-300">
+                    <div className="flex items-center gap-2.5">
+                      <Check className="w-4 h-4 text-vivid-blue shrink-0" />
+                      <span>98%+ ATS Parse Rate Across Workday, Taleo &amp; Naukri</span>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <Check className="w-4 h-4 text-teal-accent shrink-0" />
+                      <span>Guaranteed 24-Hour Turnaround with Free Revisions</span>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <Check className="w-4 h-4 text-sky-400 shrink-0" />
+                      <span>Direct WhatsApp Consultation with CV Specialists</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Dubai, UAE &bull; Kerala, India</span>
+                  <span className="font-bold text-vivid-blue">ILM-ON Career Services</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
