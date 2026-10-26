@@ -40,4 +40,5 @@ next-env.d.ts
 # Large archives / scratch
 *.zip
 *.mp4
+!public/assets/reviews/Aswathy ashish client Feedback for ATS friendly CV, Cover Letter and Linkedin profile optimization.mp4
 scratch/

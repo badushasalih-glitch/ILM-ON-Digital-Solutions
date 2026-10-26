@@ -86,7 +86,7 @@ const cvPackages: PriceItem[] = [
       'Editable template adaptable for multiple applications',
       'Direct Gulf & international recruiter alignment',
       'Editable Word (.docx) & High-Res PDF formats',
-      'Priority delivery & revision guarantee',
+      'Priority delivery & revision support',
     ],
     ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
   },
@@ -174,7 +174,7 @@ const faqs = [
   },
   {
     q: 'How does the Recruitment fee model work?',
-    a: 'For candidates, submitting your CV and receiving interview coordination is 100% free with zero upfront charges. Our consultancy fee is 20% of your first month salary, payable ONLY after you are selected, join the company, and receive your first paycheck.',
+    a: 'For candidates, submitting your CV and receiving interview coordination is completely free with zero upfront charges. Our consultancy fee is 20% of your first month salary, payable ONLY after you are selected, join the company, and receive your first paycheck.',
   },
   {
     q: 'Can I pay in AED or USD instead of INR?',
@@ -486,7 +486,7 @@ export default function PricingPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-teal-accent shrink-0" />
-                      <span>Replacement guarantee period per corporate agreement</span>
+                      <span>Replacement candidate support per corporate agreement</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-teal-accent shrink-0" />

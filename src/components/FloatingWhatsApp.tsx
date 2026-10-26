@@ -7,10 +7,10 @@ export default function FloatingWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
       {/* Popover contact options */}
       {isOpen && (
-        <div className="mb-3 w-80 bg-white border border-surface-border rounded-2xl p-4 shadow-elevated animate-in fade-in duration-200">
+        <div className="mb-3 w-80 max-w-[calc(100vw-2rem)] bg-white border border-surface-border rounded-2xl p-4 shadow-elevated animate-in fade-in duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-surface-border">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#25D366]" />

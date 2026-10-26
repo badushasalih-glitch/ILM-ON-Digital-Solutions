@@ -48,6 +48,7 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Team', href: '/team' },
     { name: 'Portfolio', href: '/portfolio' },
+    { name: 'CV Templates', href: '/cv-templates' },
     { name: 'Client Stories', href: '/client-stories' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Contact', href: '/contact' },
@@ -278,6 +279,13 @@ export default function Navbar() {
               className="block px-3 py-2 rounded-lg text-sm font-semibold text-dark-900"
             >
               Work Portfolio
+            </Link>
+            <Link
+              href="/cv-templates"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-lg text-sm font-semibold text-dark-900"
+            >
+              CV Templates (35+ Layouts)
             </Link>
             <Link
               href="/client-stories"

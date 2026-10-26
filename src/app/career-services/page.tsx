@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import CareerPortfolioShowcase from '@/components/CareerPortfolioShowcase';
 import {
   CheckCircle2,
   ArrowRight,
@@ -70,7 +71,7 @@ const cvPackages = [
       'Editable template adaptable for multiple applications',
       'Direct Gulf & international recruiter alignment',
       'Editable Word (.docx) & High-Res PDF formats',
-      'Priority delivery & revision guarantee',
+      'Priority delivery & revision support',
     ],
     ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
   },
@@ -240,7 +241,7 @@ export default function CareerServicesPage() {
                     </div>
                     <div className="flex items-center gap-2.5">
                       <Check className="w-4 h-4 text-teal-accent shrink-0" />
-                      <span>Guaranteed 24-Hour Turnaround with Free Revisions</span>
+                      <span>Dedicated 24-Hour Turnaround with Free Revisions</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <Check className="w-4 h-4 text-sky-400 shrink-0" />
@@ -288,23 +289,23 @@ export default function CareerServicesPage() {
               </div>
             </div>
 
-            {/* Poster 2: Complete Career Branding Poster */}
+            {/* Poster 2: Professional Profile Optimization */}
             <div
-              onClick={() => setActiveModalSample('/assets/career-services/complete-career-branding-poster.png')}
+              onClick={() => setActiveModalSample('/assets/career-services/profile-optimization-service.jpeg')}
               className="cursor-pointer group relative rounded-2xl overflow-hidden border border-surface-border bg-white shadow-card hover:shadow-elevated transition-all"
             >
               <div className="relative h-[480px] w-full bg-slate-50">
                 <Image
-                  src="/assets/career-services/complete-career-branding-poster.png"
-                  alt="ILM-ON Complete Career Branding Poster"
+                  src="/assets/career-services/profile-optimization-service.jpeg"
+                  alt="ILM-ON Professional Profile Optimization - LinkedIn, Indeed, Naukri Gulf"
                   fill
                   className="object-contain group-hover:scale-[1.02] transition-transform duration-300"
                 />
               </div>
               <div className="p-4 bg-white border-t border-surface-border flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-bold text-dark-950">Complete Career Branding Suite</div>
-                  <div className="text-[11px] text-teal-accent font-semibold">CV + Cover Letter + Profile Optimization</div>
+                  <div className="text-xs font-bold text-dark-950">Professional Profile Optimization</div>
+                  <div className="text-[11px] text-teal-accent font-semibold">LinkedIn • Indeed • Naukri Gulf Integration</div>
                 </div>
                 <span className="text-xs text-vivid-blue font-bold flex items-center gap-1 group-hover:underline">
                   Click to View Full Size
@@ -321,15 +322,23 @@ export default function CareerServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl border border-surface-border bg-white p-6 sm:p-10 shadow-card">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-5 relative aspect-[3/4] max-w-sm sm:max-w-md mx-auto w-full rounded-2xl overflow-hidden bg-slate-100 border border-surface-border shadow-md">
+              <div
+                onClick={() => setActiveModalSample('/assets/cv-canadian-1.jpg')}
+                className="lg:col-span-5 relative aspect-[3/4] max-w-sm sm:max-w-md mx-auto w-full rounded-2xl overflow-hidden bg-slate-100 border border-surface-border shadow-md cursor-pointer group"
+              >
                 <Image
-                  src="/assets/career-services/ats-global-flags-banner.jpeg"
-                  alt="ATS Friendly CV Formats - Canada, New Zealand, Europass, GCC, India"
+                  src="/assets/cv-canadian-1.jpg"
+                  alt="International Standard CV Format - Canada, Europe, GCC"
                   fill
                   sizes="(max-width: 1024px) 100vw, 420px"
-                  className="object-contain"
+                  className="object-contain group-hover:scale-[1.02] transition-transform duration-300"
                   priority
                 />
+                <div className="absolute inset-0 bg-dark-950/10 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity px-3.5 py-1.5 rounded-full bg-white text-dark-950 font-bold text-[11px] shadow-md border border-slate-200">
+                    Click to Inspect Format
+                  </span>
+                </div>
               </div>
               <div className="lg:col-span-7 space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-vivid-light text-vivid-blue border border-vivid-blue/20">
@@ -359,6 +368,16 @@ export default function CareerServicesPage() {
                     <strong className="text-vivid-blue block mb-0.5">Australia & New Zealand:</strong>
                     In-depth functional responsibility breakdowns and verified local reference structure.
                   </div>
+                </div>
+
+                <div className="pt-2">
+                  <Link
+                    href="/cv-templates"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vivid-blue hover:bg-vivid-blue/90 text-white font-bold text-xs shadow-sm transition-all hover:scale-[1.02]"
+                  >
+                    <span>Explore 35+ Professional CV Templates</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -408,19 +427,19 @@ export default function CareerServicesPage() {
 
             <div className="lg:col-span-6">
               <div
-                onClick={() => setActiveModalSample('/assets/career-services/what-is-ats-cv-guide.jpeg')}
+                onClick={() => setActiveModalSample('/assets/career-services/ats-sample-faizal.jpeg')}
                 className="cursor-pointer group relative rounded-2xl overflow-hidden border border-surface-border bg-slate-50 shadow-card p-4 hover:shadow-elevated transition-all"
               >
                 <div className="relative h-[480px] w-full rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/career-services/what-is-ats-cv-guide.jpeg"
-                    alt="What is an ATS-Friendly CV infographic guide"
+                    src="/assets/career-services/ats-sample-faizal.jpeg"
+                    alt="Verified Machine-Readable ATS CV Sample - ILM-ON Digital Solutions"
                     fill
                     className="object-contain group-hover:scale-[1.02] transition-transform duration-300"
                   />
                 </div>
                 <div className="mt-2 text-center text-xs text-vivid-blue font-bold group-hover:underline">
-                  Click to inspect full infographic guide
+                  Click to inspect verified ATS sample
                 </div>
               </div>
             </div>
@@ -428,62 +447,8 @@ export default function CareerServicesPage() {
         </div>
       </section>
 
-      {/* 5. Live Resume Samples Gallery */}
-      <section id="samples" className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-vivid-blue">
-              LIVE CV GALLERY
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-dark-950 mt-1">
-              Real ILM-ON ATS Formats
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Click to view high-resolution samples of actual resumes engineered for our clients.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Sample 1: Mohamed Faizal Villan */}
-            <div
-              onClick={() => setActiveModalSample('/assets/career-services/ats-sample-faizal.jpeg')}
-              className="cursor-pointer group rounded-2xl bg-white border border-surface-border p-4 transition-all shadow-card hover:shadow-elevated hover:-translate-y-1"
-            >
-              <div className="relative h-96 w-full rounded-xl overflow-hidden bg-slate-50">
-                <Image
-                  src="/assets/career-services/ats-sample-faizal.jpeg"
-                  alt="Mohamed Faizal Villan ATS CV Model"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="mt-4 text-center">
-                <h3 className="font-bold text-dark-950 text-base">Mohamed Faizal Villan</h3>
-                <p className="text-xs text-vivid-blue font-medium mt-0.5">Operations & Project Specialist Format (GCC Standard)</p>
-              </div>
-            </div>
-
-            {/* Sample 2: Estelle Darcy */}
-            <div
-              onClick={() => setActiveModalSample('/assets/career-services/ats-sample-estelle.jpeg')}
-              className="cursor-pointer group rounded-2xl bg-white border border-surface-border p-4 transition-all shadow-card hover:shadow-elevated hover:-translate-y-1"
-            >
-              <div className="relative h-96 w-full rounded-xl overflow-hidden bg-slate-50">
-                <Image
-                  src="/assets/career-services/ats-sample-estelle.jpeg"
-                  alt="Estelle Darcy ATS Resume Model"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="mt-4 text-center">
-                <h3 className="font-bold text-dark-950 text-base">Estelle Darcy</h3>
-                <p className="text-xs text-vivid-blue font-medium mt-0.5">Corporate & Media Specialist Format (International Standard)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 5. Live Resume Samples & Career Services Work Showcase */}
+      <CareerPortfolioShowcase />
 
       {/* 6. Pricing Packages Section (MANDATORY EXACT PRICING) */}
       <section id="pricing" className="px-4 sm:px-6 lg:px-8 py-16 bg-white border-y border-surface-border">

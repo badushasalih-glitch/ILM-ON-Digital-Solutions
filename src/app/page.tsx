@@ -6,6 +6,7 @@ import StatisticsCounter from '@/components/StatisticsCounter';
 import OurStorySection from '@/components/OurStorySection';
 import DivisionCards from '@/components/DivisionCards';
 import CandidatesHiredSlider from '@/components/CandidatesHiredSlider';
+import CareerPortfolioShowcase from '@/components/CareerPortfolioShowcase';
 import TeamSection from '@/components/TeamSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import { ArrowRight, CheckCircle2, Shield, Globe, Sparkles, Building2, MapPin, Award } from 'lucide-react';
@@ -24,6 +25,9 @@ export default function HomePage() {
 
       {/* 4. GCC Companies / Candidates Hired In Carousel */}
       <CandidatesHiredSlider />
+
+      {/* 4.1. Career Services Portfolio Showcase (CV Samples, Client Feedback, LinkedIn, Naukri, Indeed) */}
+      <CareerPortfolioShowcase />
 
       {/* 5. Gulf Career Acceleration & Multi-Platform Profile Optimization Suite */}
       <section className="py-24 bg-white border-t border-surface-border relative overflow-hidden">

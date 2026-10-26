@@ -33,7 +33,7 @@ export default function TermsPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-dark-950">3. Candidate Recruitment Policy & Fee Structure</h2>
             <div className="p-4 rounded-xl bg-teal-light/50 border border-teal-accent/20 text-xs sm:text-sm text-teal-dark font-medium leading-relaxed">
-              <strong>Zero Upfront Candidate Fee Guarantee: </strong>
+              <strong>Zero Upfront Candidate Fee Policy: </strong>
               Submitting a CV to the ILM-ON candidate pool is completely free. We do not charge advance registration, documentation, or processing fees. Our recruitment consultancy fee is strictly <strong>20% of your first month salary</strong>, payable ONLY after you are selected, complete joining formalities, and receive your first paycheck from the employer. If you are not hired, you owe us nothing.
             </div>
             <p className="text-slate-600 text-xs mt-2">

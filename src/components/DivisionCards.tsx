@@ -14,7 +14,7 @@ const divisions = [
     logo: '/assets/brand/ILM - ON Career Services Official Logo NEW.png',
     description:
       'Professional CV writing, modern executive resume design, and targeted online profile optimization for competitive international job markets.',
-    image: '/assets/career-services/complete-career-branding-poster.png',
+    image: '/assets/career-services/ats-friendly-cv-poster.jpeg',
     href: '/career-services',
     accentTag: '1 Working Day Delivery',
     tagColor: 'bg-vivid-light text-vivid-blue border-vivid-blue/20',
