@@ -44,7 +44,7 @@ export default function PortfolioPage() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Digital%20Solutions,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20team."
+              href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Digital%20Solutions,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20team."
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-full text-xs font-bold bg-white text-slate-800 border border-slate-200 hover:bg-slate-50 transition-all shadow-sm"
@@ -172,7 +172,7 @@ export default function PortfolioPage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Digital%20Solutions,%20I%20want%20to%20get%20started%20with%20your%20services."
+              href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Digital%20Solutions,%20I%20want%20to%20get%20started%20with%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-xl text-xs font-bold bg-[#25D366] hover:bg-[#20BD5A] text-white shadow-lg transition-all flex items-center gap-2 hover:scale-[1.02]"

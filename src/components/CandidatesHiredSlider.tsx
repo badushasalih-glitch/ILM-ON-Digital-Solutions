@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
-import { Building2, Sparkles, CheckCircle2, Globe2 } from 'lucide-react';
+import { ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export interface CompanyLogoItem {
   id: string;
@@ -16,7 +16,88 @@ export interface CompanyLogoItem {
 }
 
 export const gccCompanies: CompanyLogoItem[] = [
-  // 🇦🇪 UAE
+  // 1. FAB (First Abu Dhabi Bank) — UAE
+  {
+    id: 'fab',
+    name: 'First Abu Dhabi Bank (FAB)',
+    country: 'UAE',
+    flag: '🇦🇪',
+    sector: 'Banking & Asset Management',
+    logo: '/assets/companies/fab.svg',
+  },
+  // 2. Kuwait Finance House (KFH) — Kuwait
+  {
+    id: 'kfh',
+    name: 'Kuwait Finance House (KFH)',
+    country: 'Kuwait',
+    flag: '🇰🇼',
+    sector: 'Islamic Banking & Finance',
+    logo: '/assets/companies/kfh.svg',
+  },
+  // 3. ADNOC Group — UAE
+  {
+    id: 'adnoc',
+    name: 'ADNOC Group',
+    country: 'UAE',
+    flag: '🇦🇪',
+    sector: 'Energy & Petrochemicals',
+    logo: '/assets/companies/adnoc.svg',
+  },
+  // 4. SABIC — Saudi Arabia
+  {
+    id: 'sabic',
+    name: 'SABIC',
+    country: 'Saudi Arabia',
+    flag: '🇸🇦',
+    sector: 'Chemicals & Advanced Materials',
+    logo: '/assets/companies/sabic.svg',
+  },
+  // 5. Ooredoo — Qatar
+  {
+    id: 'ooredoo',
+    name: 'Ooredoo',
+    country: 'Qatar',
+    flag: '🇶🇦',
+    sector: 'Telecommunications & ICT',
+    logo: '/assets/companies/ooredoo.svg',
+  },
+  // 6. National Bank of Kuwait (NBK) — Kuwait
+  {
+    id: 'nbk',
+    name: 'National Bank of Kuwait (NBK)',
+    country: 'Kuwait',
+    flag: '🇰🇼',
+    sector: 'Commercial Banking',
+    logo: '/assets/companies/nbk.svg',
+  },
+  // 7. Almarai — Saudi Arabia
+  {
+    id: 'almarai',
+    name: 'Almarai',
+    country: 'Saudi Arabia',
+    flag: '🇸🇦',
+    sector: 'Consumer Goods & Food Production',
+    logo: '/assets/companies/almarai.svg',
+  },
+  // 8. QatarEnergy — Qatar
+  {
+    id: 'qatarenergy',
+    name: 'QatarEnergy',
+    country: 'Qatar',
+    flag: '🇶🇦',
+    sector: 'LNG & Integrated Energy',
+    logo: '/assets/companies/qatarenergy.svg',
+  },
+  // 9. Saudi Aramco — Saudi Arabia
+  {
+    id: 'aramco',
+    name: 'Saudi Aramco',
+    country: 'Saudi Arabia',
+    flag: '🇸🇦',
+    sector: 'Energy & Global Petroleum',
+    logo: '/assets/companies/aramco.svg',
+  },
+  // 10. Emaar Properties — UAE
   {
     id: 'emaar',
     name: 'Emaar Properties',
@@ -25,6 +106,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Real Estate & Hospitality',
     logo: '/assets/companies/emaar.svg',
   },
+  // 11. Emirates NBD — UAE
   {
     id: 'emirates-nbd',
     name: 'Emirates NBD',
@@ -34,14 +116,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     logo: '/assets/companies/emirates-nbd.png',
     isPng: true,
   },
-  {
-    id: 'aramco',
-    name: 'Saudi Aramco',
-    country: 'Saudi Arabia',
-    flag: '🇸🇦',
-    sector: 'Energy & Global Petroleum',
-    logo: '/assets/companies/aramco.svg',
-  },
+  // 12. QNB Group — Qatar
   {
     id: 'qnb',
     name: 'QNB Group',
@@ -50,6 +125,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Banking & Financial Group',
     logo: '/assets/companies/qnb.svg',
   },
+  // 13. stc Group — Saudi Arabia
   {
     id: 'stc',
     name: 'stc Group',
@@ -58,70 +134,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Telecom & Digital Infrastructure',
     logo: '/assets/companies/stc.svg',
   },
-  {
-    id: 'fab',
-    name: 'First Abu Dhabi Bank',
-    country: 'UAE',
-    flag: '🇦🇪',
-    sector: 'Banking & Asset Management',
-    logo: '/assets/companies/fab.svg',
-  },
-  {
-    id: 'kfh',
-    name: 'Kuwait Finance House',
-    country: 'Kuwait',
-    flag: '🇰🇼',
-    sector: 'Islamic Banking & Finance',
-    logo: '/assets/companies/kfh.svg',
-  },
-  {
-    id: 'adnoc',
-    name: 'ADNOC Group',
-    country: 'UAE',
-    flag: '🇦🇪',
-    sector: 'Energy & Petrochemicals',
-    logo: '/assets/companies/adnoc.svg',
-  },
-  {
-    id: 'sabic',
-    name: 'SABIC',
-    country: 'Saudi Arabia',
-    flag: '🇸🇦',
-    sector: 'Chemicals & Advanced Materials',
-    logo: '/assets/companies/sabic.svg',
-  },
-  {
-    id: 'ooredoo',
-    name: 'Ooredoo',
-    country: 'Qatar',
-    flag: '🇶🇦',
-    sector: 'Telecommunications & ICT',
-    logo: '/assets/companies/ooredoo.svg',
-  },
-  {
-    id: 'nbk',
-    name: 'National Bank of Kuwait',
-    country: 'Kuwait',
-    flag: '🇰🇼',
-    sector: 'Commercial Banking',
-    logo: '/assets/companies/nbk.svg',
-  },
-  {
-    id: 'almarai',
-    name: 'Almarai',
-    country: 'Saudi Arabia',
-    flag: '🇸🇦',
-    sector: 'Consumer Goods & Food Production',
-    logo: '/assets/companies/almarai.svg',
-  },
-  {
-    id: 'qatarenergy',
-    name: 'QatarEnergy',
-    country: 'Qatar',
-    flag: '🇶🇦',
-    sector: 'LNG & Integrated Energy',
-    logo: '/assets/companies/qatarenergy.svg',
-  },
+  // 14. Zain Group — Kuwait
   {
     id: 'zain',
     name: 'Zain Group',
@@ -130,6 +143,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Mobile & Data Telephony',
     logo: '/assets/companies/zain.svg',
   },
+  // 15. Alba (Aluminium Bahrain) — Bahrain
   {
     id: 'alba',
     name: 'Alba (Aluminium Bahrain)',
@@ -138,14 +152,16 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Industrial Metal & Aluminium',
     logo: '/assets/companies/alba.svg',
   },
+  // 16. Bank Muscat — Oman
   {
     id: 'bank-muscat',
     name: 'Bank Muscat',
     country: 'Oman',
     flag: '🇴🇲',
-    sector: 'Financial Services & Corporate Banking',
+    sector: 'Financial Services & Banking',
     logo: '/assets/companies/bank-muscat.svg',
   },
+  // 17. Aldar Properties — UAE
   {
     id: 'aldar',
     name: 'Aldar Properties',
@@ -155,6 +171,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     logo: '/assets/companies/aldar.png',
     isPng: true,
   },
+  // 18. Batelco — Bahrain
   {
     id: 'batelco',
     name: 'Batelco',
@@ -163,6 +180,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Digital Telecommunications',
     logo: '/assets/companies/batelco.svg',
   },
+  // 19. Omantel — Oman
   {
     id: 'omantel',
     name: 'Omantel',
@@ -171,6 +189,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     sector: 'Integrated Telecom Solutions',
     logo: '/assets/companies/omantel.svg',
   },
+  // 20. DEWA — UAE
   {
     id: 'dewa',
     name: 'DEWA',
@@ -180,6 +199,7 @@ export const gccCompanies: CompanyLogoItem[] = [
     logo: '/assets/companies/dewa.png',
     isPng: true,
   },
+  // 21. OQ — Oman
   {
     id: 'oq',
     name: 'OQ',
@@ -202,9 +222,10 @@ export default function CandidatesHiredSlider() {
       ref={sectionRef}
       aria-label="Candidates Hired In - GCC Companies and Employers"
       className="py-16 sm:py-24 bg-white border-y border-surface-border relative overflow-hidden"
+      id="candidates-hired"
     >
       {/* Background ambient lighting */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(0,140,255,0.03),rgba(255,255,255,0))]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(2,132,245,0.04),rgba(255,255,255,0))]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -214,20 +235,23 @@ export default function CandidatesHiredSlider() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal-dark border border-teal-accent/25 mb-4 shadow-xs">
-            <Building2 className="w-3.5 h-3.5 text-teal-accent" />
-            <span>GCC TALENT RECRUITMENT & OPPORTUNITY NETWORK</span>
+          {/* Top Pill Badge with Shield / Lock Icon */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-blue-50 text-[#0284F5] border border-blue-200/80 mb-4 shadow-2xs">
+            <ShieldCheck className="w-4 h-4 text-[#0284F5]" />
+            <span>GCC TALENT RECRUITMENT &amp; OPPORTUNITY NETWORK</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark-950 tracking-tight">
-            Candidates Hired in
+          {/* Main Headline (Serif Typography) */}
+          <h2 className="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1B3D] tracking-tight">
+            Candidates Hired In
           </h2>
 
+          {/* Subtitle Copy */}
           <p className="mt-3.5 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Market-leading enterprises, multinational conglomerates, and esteemed corporate employers across our India & GCC recruitment and candidate placement ecosystem.
+            Market-leading enterprises, multinational conglomerates, and esteemed corporate employers across our India &amp; GCC recruitment and candidate placement ecosystem.
           </p>
 
-          {/* GCC Coverage Badges */}
+          {/* Country Indicator Grid */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
             {[
               { flag: '🇦🇪', label: 'UAE' },
@@ -239,7 +263,7 @@ export default function CandidatesHiredSlider() {
             ].map((c) => (
               <span
                 key={c.label}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-50 border border-slate-200/80 text-slate-700 shadow-xs hover:border-teal-accent/30 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-50 border border-slate-200/80 text-slate-700 shadow-2xs hover:border-[#0284F5]/40 transition-colors"
               >
                 <span>{c.flag}</span>
                 <span>{c.label}</span>
@@ -268,16 +292,16 @@ export default function CandidatesHiredSlider() {
           {duplicatedCompanies.map((item, idx) => (
             <div
               key={`${item.id}-${idx}`}
-              className="w-[240px] sm:w-[270px] h-[160px] sm:h-[175px] bg-white rounded-2xl border border-slate-200/90 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_-6px_rgba(0,107,91,0.14)] hover:border-teal-accent/40 transition-all duration-300 group p-5 flex flex-col items-center justify-between shrink-0 select-none cursor-pointer"
+              className="w-[240px] sm:w-[270px] h-[160px] sm:h-[175px] bg-white rounded-2xl border border-[#E2E8F0] shadow-sm hover:shadow-md hover:border-[#0284F5]/40 transition-all duration-300 group p-5 flex flex-col items-center justify-between shrink-0 select-none cursor-pointer"
             >
-              {/* Country & Industry Flag Tag */}
+              {/* Card Header Tags */}
               <div className="w-full flex items-center justify-between text-[10px] font-semibold text-slate-400">
                 <span className="flex items-center gap-1">
                   <span className="text-xs">{item.flag}</span>
-                  <span className="uppercase tracking-wider font-bold text-slate-600">{item.country}</span>
+                  <span className="uppercase tracking-wider font-bold text-slate-700">{item.country}</span>
                 </span>
-                <span className="px-1.5 py-0.5 rounded bg-slate-100/90 text-slate-500 font-medium text-[9px] uppercase tracking-wide">
-                  GCC Employer
+                <span className="px-2 py-0.5 rounded bg-slate-100/90 text-slate-600 font-bold text-[9px] uppercase tracking-wide">
+                  GCC EMPLOYER
                 </span>
               </div>
 
@@ -295,7 +319,7 @@ export default function CandidatesHiredSlider() {
 
               {/* Company Name & Sector */}
               <div className="w-full text-center border-t border-slate-100 pt-2.5">
-                <div className="text-xs font-bold text-dark-950 truncate group-hover:text-teal-accent transition-colors">
+                <div className="text-xs font-bold text-[#0B1B3D] truncate group-hover:text-[#0284F5] transition-colors">
                   {item.name}
                 </div>
                 <div className="text-[10px] text-slate-500 truncate mt-0.5">
@@ -307,12 +331,12 @@ export default function CandidatesHiredSlider() {
         </div>
       </motion.div>
 
-      {/* Bottom Trust & Assurance Note */}
+      {/* Bottom Caption Strip */}
       <div className="max-w-4xl mx-auto px-4 mt-8 sm:mt-10 text-center">
         <p className="text-xs text-slate-500 leading-relaxed flex items-center justify-center flex-wrap gap-2">
-          <CheckCircle2 className="w-3.5 h-3.5 text-teal-accent shrink-0" />
+          <CheckCircle2 className="w-3.5 h-3.5 text-[#0284F5] shrink-0" />
           <span>
-            Connecting talent across Banking, Energy, Telecommunications, Real Estate, Technology, and Industrial conglomerates in the GCC.
+            Connecting talent across Banking, Oil &amp; Gas, Healthcare, Telecommunications, Real Estate, Technology, and Industrial Sectors.
           </span>
         </p>
       </div>

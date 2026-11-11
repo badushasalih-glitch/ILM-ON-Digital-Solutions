@@ -5,13 +5,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/career-services',
+    '/ats-cv',
+    '/cover-letter',
+    '/europass-cv',
+    '/linkedin-optimization',
+    '/naukri-gulf-optimization',
+    '/indeed-optimization',
+    '/cv-templates',
+    '/pricing',
     '/recruitment',
     '/digital-marketing',
-    '/about',
-    '/team',
     '/portfolio',
     '/client-stories',
-    '/pricing',
+    '/about',
+    '/team',
     '/contact',
     '/privacy',
     '/terms',
@@ -21,6 +28,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : route.startsWith('/career-services') || route.startsWith('/recruitment') || route.startsWith('/digital-marketing') ? 0.9 : 0.8,
+    priority:
+      route === ''
+        ? 1.0
+        : [
+            '/career-services',
+            '/ats-cv',
+            '/cover-letter',
+            '/recruitment',
+            '/digital-marketing',
+          ].includes(route)
+        ? 0.9
+        : 0.8,
   }));
 }

@@ -28,7 +28,7 @@ const cvPackages = [
     id: 'normal-cv',
     name: 'Normal Professional CV',
     tag: 'STANDARD ENTRY',
-    prices: { INR: '₹499', AED: 'AED 20', USD: '$6' },
+    prices: { INR: '₹499', AED: 'AED 25', USD: '$7' },
     delivery: 'Within 24 Hours',
     description: 'Clean visual resume designed for direct hiring manager review, walk-in interviews, and local corporate applications.',
     features: [
@@ -38,7 +38,7 @@ const cvPackages = [
       'Logical section hierarchy highlighting core experience',
       '1 free round of revision adjustments',
     ],
-    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20Normal%20Professional%20CV%20(499%20INR%20/%2020%20AED).',
+    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20Normal%20Professional%20CV%20(499%20INR%20/%2025%20AED).',
   },
   {
     id: 'ats-cv',
@@ -56,7 +56,7 @@ const cvPackages = [
       'Editable Word (.docx) & High-Res PDF formats',
       'Free revision support until satisfied',
     ],
-    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20(599%20INR%20/%2025%20AED).',
+    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20(599%20INR%20/%2025%20AED).',
   },
   {
     id: 'ats-cv-cover',
@@ -73,7 +73,7 @@ const cvPackages = [
       'Editable Word (.docx) & High-Res PDF formats',
       'Priority delivery & revision support',
     ],
-    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
+    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
   },
 ];
 
@@ -90,7 +90,7 @@ const profileServices = [
       'Indeed resume upload & formatting verification',
       'Recruiter visibility setting optimization',
     ],
-    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20Indeed%20Profile%20Optimization%20(499%20INR%20/%2020%20AED).',
+    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20Indeed%20Profile%20Optimization%20(499%20INR%20/%2020%20AED).',
   },
   {
     id: 'naukri-opt',
@@ -105,7 +105,7 @@ const profileServices = [
       'UAE / GCC visa status & location prominence',
       'Reviewed by certified UAE HR specialists',
     ],
-    ctaUrl: 'https://wa.me/971562528518?text=Hello%20ILM-ON,%20I%20want%20Naukri%20Gulf%20Profile%20Optimization%20(799%20INR%20/%2035%20AED).',
+    ctaUrl: 'https://wa.me/971562958907?text=Hello%20ILM-ON,%20I%20want%20Naukri%20Gulf%20Profile%20Optimization%20(799%20INR%20/%2035%20AED).',
   },
   {
     id: 'linkedin-opt',
@@ -119,7 +119,7 @@ const profileServices = [
       'Experience section re-written with quantified impact',
       'Top 50 skills matrix for algorithmic matching',
     ],
-    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20LinkedIn%20Profile%20Optimization%20(970%20INR%20/%2040%20AED).',
+    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20LinkedIn%20Profile%20Optimization%20(970%20INR%20/%2040%20AED).',
   },
 ];
 
@@ -165,7 +165,7 @@ export default function CareerServicesPage() {
               {/* CTAs & Social Links */}
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20get%20my%20CV%20rebuilt%20today."
+                  href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20get%20my%20CV%20rebuilt%20today."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all hover:scale-[1.02]"

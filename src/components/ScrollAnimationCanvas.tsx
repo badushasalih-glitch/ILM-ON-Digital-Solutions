@@ -40,6 +40,14 @@ export default function ScrollAnimationCanvas() {
 
   // Preload frames progressively with Frame 1 as exact Main Landing page - Hero section 1st Frame image
   useEffect(() => {
+    // Check if mobile or reduced motion: do not download 180MB of frames on phones or reduced-motion
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const prefersReduced = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (isMobile || prefersReduced) {
+      setIsReady(true);
+      return;
+    }
+
     let isCancelled = false;
     const images: HTMLImageElement[] = [];
     imagesRef.current = images;
@@ -214,24 +222,73 @@ export default function ScrollAnimationCanvas() {
   }, [scrollYProgress]);
 
   return (
-    <div ref={containerRef} className="relative h-[320vh] bg-dark-950">
-      {/* Sticky Fullscreen Frame */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-end">
-        {/* Instant Frame 1 Visual: Strictly Main Landing page - Hero section 1st Frame image */}
-        <div 
-          className="absolute inset-0 pointer-events-none transition-opacity duration-700 overflow-hidden"
-          style={{ opacity: isReady ? 0 : 1 }}
-        >
+    <>
+      {/* Mobile-First Static Hero Section (<768px): Fast 159 KB load, zero animation frame downloads */}
+      <section className="block md:hidden relative min-h-[92vh] w-full bg-dark-950 flex flex-col justify-end overflow-hidden pb-10 pt-24 px-4 sm:px-6">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <NextImage
-            src="/assets/hero/Main Landing Page - Hero Section 1st frame image.png"
+            src="/assets/hero/hero-mobile.jpg"
             alt="ILM-ON Digital Solutions - Career, Recruitment, Digital Growth"
             fill
             priority
             sizes="100vw"
             className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950/20" />
         </div>
+
+        <div className="relative z-10 w-full max-w-lg mx-auto text-center">
+          <div className="inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest bg-white/10 text-white border border-white/20 mb-3 backdrop-blur-sm shadow-sm">
+            ILM-ON DIGITAL SOLUTIONS
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-[1.18] mb-3">
+            Build Your Career. <br />
+            <span className="text-vivid-blue">Present Your Potential.</span>
+          </h1>
+
+          <p className="text-xs sm:text-sm text-slate-200 font-normal leading-relaxed mb-6 max-w-md mx-auto">
+            Professional CV writing, ATS-friendly résumé formatting, LinkedIn profile optimization, recruitment support, and digital marketing solutions.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/career-services"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-bold bg-vivid-blue hover:bg-vivid-hover text-white shadow-md transition-all flex items-center justify-center gap-2"
+            >
+              <span>Explore Career Services</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+
+            <Link
+              href="/contact"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm transition-all"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Desktop Interactive Scroll Animation (>=768px: Apple-grade 320vh canvas animation) */}
+      <div ref={containerRef} className="hidden md:block relative h-[320vh] bg-dark-950">
+        {/* Sticky Fullscreen Frame */}
+        <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-end">
+          {/* Instant Frame 1 Visual: Crisp 1080p preview */}
+          <div 
+            className="absolute inset-0 pointer-events-none transition-opacity duration-700 overflow-hidden"
+            style={{ opacity: isReady ? 0 : 1 }}
+          >
+            <NextImage
+              src="/assets/hero/hero-mobile.jpg"
+              alt="ILM-ON Digital Solutions - Career, Recruitment, Digital Growth"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent" />
+          </div>
 
         {/* Hardware-Accelerated Canvas with Apple-grade parallax scale */}
         <motion.div 
@@ -350,5 +407,6 @@ export default function ScrollAnimationCanvas() {
         </div>
       </div>
     </div>
+    </>
   );
 }

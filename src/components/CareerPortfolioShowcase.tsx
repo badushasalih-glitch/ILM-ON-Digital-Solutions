@@ -884,7 +884,7 @@ export default function CareerPortfolioShowcase() {
                           <span>View on Instagram</span>
                         </a>
                         <a
-                          href={`https://wa.me/919292940652?text=${encodeURIComponent(item.inquiryText)}`}
+                          href={`https://wa.me/9192929406522?text=${encodeURIComponent(item.inquiryText)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="py-2.5 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
@@ -903,7 +903,7 @@ export default function CareerPortfolioShowcase() {
                           <span>Inspect Sample</span>
                         </button>
                         <a
-                          href={`https://wa.me/919292940652?text=${encodeURIComponent(item.inquiryText)}`}
+                          href={`https://wa.me/9192929406522?text=${encodeURIComponent(item.inquiryText)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="py-2.5 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
@@ -954,7 +954,7 @@ export default function CareerPortfolioShowcase() {
               <span>Visit Official Instagram</span>
             </a>
             <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20am%20exploring%20your%20career%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20expert."
+              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20am%20exploring%20your%20career%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20expert."
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs text-center transition-all shadow-md hover:scale-[1.02] flex items-center justify-center gap-2"
@@ -1060,7 +1060,7 @@ export default function CareerPortfolioShowcase() {
                   Close (ESC)
                 </button>
                 <a
-                  href={`https://wa.me/919292940652?text=${encodeURIComponent(selectedItem.inquiryText)}`}
+                  href={`https://wa.me/9192929406522?text=${encodeURIComponent(selectedItem.inquiryText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-md flex items-center gap-2 hover:scale-[1.02]"

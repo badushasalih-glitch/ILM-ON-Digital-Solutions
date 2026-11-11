@@ -17,7 +17,7 @@ const teamMembers = [
       'Extensive corporate partner network across UAE & GCC ecosystem',
       'Directing international recruitment consultancy standards',
     ],
-    whatsapp: 'https://wa.me/919292940652?text=Hello%20Badusha%20Salih,%20I%20would%20like%20to%20connect%20with%20ILM-ON.',
+    whatsapp: 'https://wa.me/9192929406522?text=Hello%20Badusha%20Salih,%20I%20would%20like%20to%20connect%20with%20ILM-ON.',
   },
   {
     name: 'Fathima',
@@ -32,7 +32,7 @@ const teamMembers = [
       'Candidate support workflows ensuring fast 24-hour turnaround',
       'Seamless multi-desk coordination between India and Dubai',
     ],
-    whatsapp: 'https://wa.me/919292940652?text=Hello%20Fathima,%20I%20would%20like%20to%20connect%20regarding%20career%20services.',
+    whatsapp: 'https://wa.me/9192929406522?text=Hello%20Fathima,%20I%20would%20like%20to%20connect%20regarding%20career%20services.',
   },
   {
     name: 'Mohamed Sanif',
@@ -47,7 +47,7 @@ const teamMembers = [
       'Candidate screening and interview preparation support for GCC roles',
       'Transparent consultancy fee protocol (zero upfront candidate fee)',
     ],
-    whatsapp: 'https://wa.me/971562528518?text=Hello%20Mohamed%20Sanif,%20I%20would%20like%20to%20consult%20regarding%20Gulf%20recruitment.',
+    whatsapp: 'https://wa.me/971562958907?text=Hello%20Mohamed%20Sanif,%20I%20would%20like%20to%20consult%20regarding%20Gulf%20recruitment.',
   },
 ];
 
@@ -160,11 +160,11 @@ export default function TeamPage() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-600 pt-2 border-t border-slate-100">
             <span className="flex items-center gap-1.5 text-dark-950">
               <span className="w-2 h-2 rounded-full bg-teal-accent" />
-              Dubai Desk: +971 56 252 8518
+              Dubai Desk: +971 56 295 8907
             </span>
             <span className="flex items-center gap-1.5 text-dark-950">
               <span className="w-2 h-2 rounded-full bg-vivid-blue" />
-              India Desk: +91 9292940652
+              India Desk: +91 92929406522
             </span>
             <span className="flex items-center gap-1.5 text-slate-500">
               info@ilmondigitalsolutions.online

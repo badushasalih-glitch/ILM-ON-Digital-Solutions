@@ -168,7 +168,7 @@ export default function ClientStoriesPage() {
                   <div className="text-[11px] text-slate-500">“The CV has a very premium touch”</div>
                 </div>
               </div>
-              <audio id="client-audio-1" src="/assets/reviews/audio-review-premium-touch-1.mp4" onEnded={() => setPlayingAudio(null)} />
+              <audio id="client-audio-1" src="/assets/reviews/audio-review-premium-touch-1.mp4" preload="none" onEnded={() => setPlayingAudio(null)} />
             </div>
 
             <div className="p-4 rounded-2xl bg-surface-light border border-surface-border flex items-center justify-between">
@@ -185,7 +185,7 @@ export default function ClientStoriesPage() {
                   <div className="text-[11px] text-slate-500">“Instant recruiter calls received”</div>
                 </div>
               </div>
-              <audio id="client-audio-2" src="/assets/reviews/audio-review-premium-touch-2.mp4" onEnded={() => setPlayingAudio(null)} />
+              <audio id="client-audio-2" src="/assets/reviews/audio-review-premium-touch-2.mp4" preload="none" onEnded={() => setPlayingAudio(null)} />
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function ClientStoriesPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20would%20like%20a%20preliminary%20review%20of%20my%20CV."
+              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20would%20like%20a%20preliminary%20review%20of%20my%20CV."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all"

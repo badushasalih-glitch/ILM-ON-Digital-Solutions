@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-dark-950">5. Direct Communication & WhatsApp</h2>
             <p className="text-slate-600">
-              By contacting our India Desk (+91 9292940652) or Dubai Desk (+971 562528518), you consent to receiving operational communications, revision drafts, and consultation updates via WhatsApp, phone, or email. You may opt out of promotional messages at any time.
+              By contacting our India Desk (+91 92929406522) or Dubai Desk (+971 56 295 8907), you consent to receiving operational communications, revision drafts, and consultation updates via WhatsApp, phone, or email. You may opt out of promotional messages at any time.
             </p>
           </section>
 

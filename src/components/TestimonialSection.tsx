@@ -85,6 +85,7 @@ export default function TestimonialSection() {
                 src="/assets/reviews/verified-clients-reel.mp4"
                 controls
                 playsInline
+                preload="none"
                 className="w-full h-full object-contain bg-white"
                 poster="/assets/reviews/client-showcase-three-models.png"
               />
@@ -160,7 +161,7 @@ export default function TestimonialSection() {
                       <div className="text-[10px] text-slate-500">“The CV has a very premium touch”</div>
                     </div>
                   </div>
-                  <audio id="audio-player-1" src="/assets/reviews/audio-review-premium-touch-1.mp4" onEnded={() => setPlayingAudio(null)} />
+                  <audio id="audio-player-1" src="/assets/reviews/audio-review-premium-touch-1.mp4" preload="none" onEnded={() => setPlayingAudio(null)} />
                 </div>
 
                 {/* Voice note 2 */}
@@ -178,7 +179,7 @@ export default function TestimonialSection() {
                       <div className="text-[10px] text-slate-500">“Instant recruiter calls received”</div>
                     </div>
                   </div>
-                  <audio id="audio-player-2" src="/assets/reviews/audio-review-premium-touch-2.mp4" onEnded={() => setPlayingAudio(null)} />
+                  <audio id="audio-player-2" src="/assets/reviews/audio-review-premium-touch-2.mp4" preload="none" onEnded={() => setPlayingAudio(null)} />
                 </div>
               </div>
             </div>

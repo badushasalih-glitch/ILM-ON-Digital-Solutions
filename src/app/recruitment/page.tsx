@@ -153,7 +153,7 @@ export default function RecruitmentPage() {
               {/* CTAs & Social Links */}
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20we%20have%20a%20hiring%20requirement%20for%20our%20company."
+                  href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20we%20have%20a%20hiring%20requirement%20for%20our%20company."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-700 text-white shadow-md transition-all hover:scale-[1.02]"
@@ -164,7 +164,7 @@ export default function RecruitmentPage() {
                 </a>
 
                 <a
-                  href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20I%20am%20a%20candidate%20looking%20for%20opportunities%20in%20India%20/%20GCC."
+                  href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20I%20am%20a%20candidate%20looking%20for%20opportunities%20in%20India%20/%20GCC."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-white text-dark-950 border border-surface-border hover:bg-slate-50 transition-all shadow-sm"
@@ -291,7 +291,7 @@ export default function RecruitmentPage() {
                 </div>
               </div>
               <a
-                href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20we%20want%20to%20hire%20candidates%20for%20our%20company."
+                href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20we%20want%20to%20hire%20candidates%20for%20our%20company."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-all"
@@ -332,7 +332,7 @@ export default function RecruitmentPage() {
                 </div>
               </div>
               <a
-                href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20I%20am%20seeking%20new%20job%20opportunities."
+                href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20I%20am%20seeking%20new%20job%20opportunities."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-vivid-blue hover:bg-vivid-blue/90 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-all"
@@ -654,7 +654,7 @@ export default function RecruitmentPage() {
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
             <a
-              href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20I%20would%20like%20to%20connect%20regarding%20recruitment%20services."
+              href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20I%20would%20like%20to%20connect%20regarding%20recruitment%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-700 text-white shadow-md transition-all hover:scale-[1.02]"
