@@ -343,7 +343,7 @@ export default function Navbar() {
           {/* Desktop Direct WhatsApp Header Button */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20would%20like%20to%20consult%20with%20a%20career%20specialist."
+              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20would%20like%20to%20consult%20with%20a%20career%20specialist."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-[#0B1B3D] hover:bg-[#11285A] text-white shadow-xs transition-all active:scale-98"
@@ -356,7 +356,7 @@ export default function Navbar() {
           {/* Mobile Hamburger Button */}
           <div className="lg:hidden flex items-center gap-2">
             <a
-              href="https://wa.me/9192929406522"
+              href="https://wa.me/919292940652"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Direct WhatsApp Consultation"
@@ -476,12 +476,12 @@ export default function Navbar() {
 
           <div className="pt-4 border-t border-slate-100 space-y-2">
             <a
-              href="https://wa.me/9192929406522"
+              href="https://wa.me/919292940652"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3 rounded-xl text-xs font-bold bg-[#0B1B3D] text-white flex items-center justify-center gap-2 shadow-xs"
             >
-              <span>India Desk (+91 92929406522)</span>
+              <span>India Desk (+91 9292940652)</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
             <a

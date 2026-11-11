@@ -39,7 +39,7 @@ const COMPARISONS: ComparisonRow[] = [
 
 export default function ComparisonSection() {
   const whatsappUrl =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent('Hello ILM-ON, I would like to consult with a career specialist about my CV.');
 
   return (

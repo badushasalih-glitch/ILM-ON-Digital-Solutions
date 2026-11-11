@@ -8,8 +8,7 @@ import {
   ChevronRight,
   Eye,
   X,
-  ExternalLink,
-  MessageCircle,
+  ArrowRight,
   CheckCircle2,
   Sparkles,
   FileText,
@@ -53,47 +52,47 @@ const INSTAGRAM_URL = 'https://www.instagram.com/ilmon_digitalsolutions/';
 // STRICTLY UNIQUE ASSETS (NO DUPLICATE POSTERS IN ANY CATEGORY)
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   // ==========================================
-  // 1. CV SAMPLES (Unique Real Deliverables)
+  // 1. CV SAMPLES (Privacy-Safe Deliverables)
   // ==========================================
   {
-    id: 'cv-faizal',
+    id: 'cv-gcc-anonymized',
     category: 'cv-samples',
     categoryLabel: 'CV Samples',
-    title: 'Mohamed Faizal Villan — Executive ATS Format',
-    subtitle: 'Operations & Senior Finance Leadership (GCC Standard)',
+    title: 'GCC Single-Column ATS Resume',
+    subtitle: 'Procurement & Retail Supply Chain (Anonymized Sample)',
     description:
-      'Engineered with high-density ATS keywords, quantified achievements, and structured career progression tailored for tier-1 EPC contractors and corporate enterprises in the UAE.',
-    image: '/assets/career-services/ats-sample-faizal.jpeg',
+      'Redacted ILM-ON ATS CV sample formatted with single-column hierarchy, role keywords, and clean chronological experience for Gulf applications.',
+    image: '/assets/ILM - ON MODERN CV SAMPLES - NEW.png',
     aspectRatio: 'landscape',
-    tags: ['GCC Standard', 'ATS Optimized', 'A4 / Word / PDF', 'Turnaround < 24h'],
+    tags: ['GCC Standard', 'ATS Optimized', 'Word / PDF', 'Anonymized Sample'],
     inquiryText:
-      'Hello ILM-ON, I would like to order an ATS-Friendly CV similar to the Mohamed Faizal Villan sample.',
+      'Hello ILM-ON, I would like to order an ATS-Friendly CV.',
   },
   {
-    id: 'cv-estelle',
+    id: 'cv-canadian-2',
     category: 'cv-samples',
     categoryLabel: 'CV Samples',
-    title: 'Estelle Darcy — Healthcare & International ATS Model',
-    subtitle: 'Registered Nurse (RN) Format (North American & Global Standard)',
+    title: 'Structured Clinical & Healthcare Resume',
+    subtitle: 'Registered Nursing & Hospital Systems Format',
     description:
-      'Strict compliance with international parsing standards (no photo, anti-bias formatting, clinical rotations, competency matrix). 100% parseable across Workday, Taleo, and Greenhouse ATS systems.',
-    image: '/assets/career-services/ats-sample-estelle.jpeg',
-    aspectRatio: 'landscape',
-    tags: ['International Standard', 'Clinical Matrix', 'Taleo / Workday Compliant'],
+      'Structured healthcare resume highlighting clinical proficiencies, certifications, and hospital experience with demo placeholder contact details.',
+    image: '/assets/cv-canadian-2.jpg',
+    aspectRatio: 'portrait',
+    tags: ['Healthcare Format', 'Clinical Matrix', 'Taleo / Workday Compliant'],
     inquiryText:
-      'Hello ILM-ON, I would like to order an International ATS CV similar to the Estelle Darcy sample.',
+      'Hello ILM-ON, I would like to order a healthcare / international ATS CV.',
   },
   {
     id: 'cv-canadian-1',
     category: 'cv-samples',
     categoryLabel: 'CV Samples',
     title: 'Canadian & North American Compliance Resume',
-    subtitle: 'Anti-Discrimination Scoring & Accomplishment Metrics',
+    subtitle: 'Anti-Bias Structure & Accomplishment Metrics',
     description:
-      'Structured to Canadian immigration and corporate hiring norms. Focuses strictly on quantifiable career accomplishments, core competencies, and targeted skills taxonomy.',
+      'Structured to Canadian and North American hiring norms focusing on quantifiable career accomplishments, core competencies, and skills taxonomy.',
     image: '/assets/cv-canadian-1.jpg',
     aspectRatio: 'portrait',
-    tags: ['Canadian Resume', 'North America', 'Strict Anti-Bias'],
+    tags: ['Canadian Resume', 'North America', 'Illustrative Sample'],
     inquiryText:
       'Hello ILM-ON, I want to order a Canadian compliance resume format.',
   },
@@ -104,7 +103,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'Official Europass Standard Curriculum Vitae',
     subtitle: 'European Union Standardized Framework & CEFR Alignment',
     description:
-      'Official European Union Europass layout adhering to the European Mobility framework, standard section taxonomy, and cross-border European recruiter standards.',
+      'Official European Union Europass layout adhering to European Mobility guidelines, language proficiency scales, and European recruiter standards.',
     image: '/assets/cv-europass-1.png',
     aspectRatio: 'portrait',
     tags: ['Europass Format', 'European Union', 'CEFR Languages'],
@@ -116,12 +115,12 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'cv-samples',
     categoryLabel: 'CV Samples',
     title: 'ATS-Friendly CV Creation & Formatting Suite',
-    subtitle: 'Official ILM-ON Service Specification (₹599 / AED 25 / SAR 25)',
+    subtitle: 'Official ILM-ON Service Specification (₹599 / AED 25 / $7)',
     description:
-      'Comprehensive resume engineering for Canada, New Zealand, Europe (Europass), Gulf GCC, and India. 100% keyword density guarantee, Word & PDF delivery within 24 hours.',
+      'Comprehensive resume formatting for Canada, Europe (Europass), Gulf GCC, and India with role-aligned keyword structuring and Word & PDF delivery.',
     image: '/assets/career-services/ats-friendly-cv-poster.jpeg',
     aspectRatio: 'square',
-    tags: ['₹599 / AED 25', '24h Delivery', 'Full ATS Optimization'],
+    tags: ['₹599 / AED 25', '24–48h Delivery', 'ATS Formatting'],
     inquiryText:
       'Hello ILM-ON, I want to order the ATS-Friendly CV package (₹599 / AED 25).',
   },
@@ -316,78 +315,33 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 
   // ==========================================
-  // 3. LINKEDIN PROFILE OPTIMIZATION (Unique)
+  // 3. LINKEDIN PROFILE OPTIMIZATION
   // ==========================================
   {
     id: 'li-poster',
     category: 'linkedin',
     categoryLabel: 'LinkedIn Optimization',
     title: 'LinkedIn Profile Optimization — Official Service Suite',
-    subtitle: 'Recruiter Search Ranking, Headline & Keyword Alignment (₹970 / AED 45 / $13)',
+    subtitle: 'Recruiter Search Ranking, Headline & Keyword Alignment (₹970 / AED 40 / $12)',
     description:
-      'Turn your LinkedIn account into an inbound recruiter magnet. Strategic keyword injection into Headline, About section, Top 50 Skills taxonomy, and verified badge setup.',
+      'Turn your LinkedIn profile into a clearer recruiter asset with headline keyword structuring, "About" narrative framing, and Top 50 Skills alignment.',
     image: '/assets/career-services/linkedin-profile-optimization.jpeg',
     aspectRatio: 'square',
-    tags: ['₹970 / AED 45', 'Recruiter Inbound', 'SEO Ranking', 'Top 50 Skills'],
+    tags: ['₹970 / AED 40', 'Recruiter Inbound', 'Search Alignment', 'Top 50 Skills'],
     inquiryText:
-      'Hello ILM-ON, I want to order LinkedIn Profile Optimization (₹970 / AED 45).',
-  },
-  {
-    id: 'li-shamim',
-    category: 'linkedin',
-    categoryLabel: 'LinkedIn Optimization',
-    title: 'Shamim Ahmad — Executive LinkedIn Presence',
-    subtitle: 'Senior Horticulturist (PMO) | Parsons Corporation, Riyadh, Saudi Arabia',
-    description:
-      'Custom corporate header banner design, optimized headline highlighting 25+ years GCC experience, design review credentials, and search visibility across tier-1 infrastructure projects.',
-    image:
-      '/assets/Linkedin optimization, Naukri & Indeed profile optimization work samples/Screenshot 2026-10-12 191416.png',
-    aspectRatio: 'landscape',
-    tags: ['Real LinkedIn Profile', 'GCC Infrastructure', 'Custom Banner', 'Search Ranked'],
-    inquiryText:
-      'Hello ILM-ON, I saw the Shamim Ahmad LinkedIn optimization and want a similar executive overhaul.',
-  },
-  {
-    id: 'li-ajas',
-    category: 'linkedin',
-    categoryLabel: 'LinkedIn Optimization',
-    title: 'Ajas Rahim — Luxury Hospitality Leadership Presence',
-    subtitle: 'Chief Steward | Luxury Hotel Pre-Opening Specialist, Riyadh, Saudi Arabia',
-    description:
-      'Premium custom dark-and-gold header banner, verified credentials (HACCP Level 4, NEBOSH, ISO 22000), and targeted headline crafted to attract luxury hospitality headhunters.',
-    image:
-      '/assets/Linkedin optimization, Naukri & Indeed profile optimization work samples/Screenshot 2026-10-21 212726.png',
-    aspectRatio: 'landscape',
-    tags: ['Real LinkedIn Profile', 'Hospitality Leadership', 'Custom Branding', 'Verified Skills'],
-    inquiryText:
-      'Hello ILM-ON, I want a luxury brand LinkedIn optimization similar to Ajas Rahim’s.',
-  },
-  {
-    id: 'li-waleed',
-    category: 'linkedin',
-    categoryLabel: 'LinkedIn Optimization',
-    title: 'Waleed Turkey — HR & Administration Professional Presence',
-    subtitle: 'HR & Administration Officer | MHRM, Doha, Qatar',
-    description:
-      'Clean professional network branding, modern tech banner design, search-optimized human resources taxonomy, and streamlined public profile URL.',
-    image:
-      '/assets/Linkedin optimization, Naukri & Indeed profile optimization work samples/Screenshot 2026-10-25 184335.png',
-    aspectRatio: 'landscape',
-    tags: ['Real LinkedIn Profile', 'HR Management', 'Qatar Market', 'Clean Modern Banner'],
-    inquiryText:
-      'Hello ILM-ON, I want to optimize my LinkedIn profile for Qatar / Gulf HR roles.',
+      'Hello ILM-ON, I want to order LinkedIn Profile Optimization (₹970 / AED 40).',
   },
   {
     id: 'li-workspace',
     category: 'linkedin',
     categoryLabel: 'LinkedIn Optimization',
     title: 'Enterprise LinkedIn Recruiter Search Environment',
-    subtitle: 'Algorithm Calibration for Inbound Headhunter Discovery',
+    subtitle: 'Structured Keyword & Taxonomy Alignment for Recruiter Discovery',
     description:
-      'In-depth configuration of LinkedIn Recruiter search filters, Open to Work configurations, industry clustering, and skills endorsements to guarantee top percentile search visibility.',
+      'Configuration of headline search keywords, Open to Work preferences, industry categorization, and skills taxonomy to improve search discoverability and recruiter relevance.',
     image: '/assets/career-services/linkedin-screen.jpg',
     aspectRatio: 'landscape',
-    tags: ['Recruiter Analytics', 'Inbound Sourcing', 'Algorithm Calibration'],
+    tags: ['Recruiter Visibility', 'Keyword Framing', 'Profile Structure'],
     inquiryText:
       'Hello ILM-ON, I would like to optimize my LinkedIn for recruiter search filters.',
   },
@@ -400,12 +354,12 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'naukri',
     categoryLabel: 'Naukri Gulf Optimization',
     title: 'Naukri Gulf Profile Optimization — Official Service Suite',
-    subtitle: 'Essential for UAE, Saudi Arabia & Qatar Markets (₹799 / AED 35 / $9)',
+    subtitle: 'Essential for UAE, Saudi Arabia & Qatar Markets (₹799 / AED 35 / $10)',
     description:
-      'Rank in the top tier of Gulf recruiter search queries. Keyword indexing for GCC labor market codes, visa status prominence (Visit, Residence, Transferable), and 100% profile score guarantee.',
+      'Structured for Gulf recruiter searches with GCC keyword indexing, clear UAE/GCC visa status visibility, and complete profile section alignment.',
     image: '/assets/career-services/naukri-profile-optimization.jpeg',
     aspectRatio: 'portrait',
-    tags: ['₹799 / AED 35', 'GCC Search Ranking', 'Visa Prominence', '100% Score'],
+    tags: ['₹799 / AED 35', 'GCC Search Ranking', 'Visa Prominence', 'Complete Profile'],
     inquiryText:
       'Hello ILM-ON, I want to order Naukri Gulf Profile Optimization (₹799 / AED 35).',
   },
@@ -884,13 +838,13 @@ export default function CareerPortfolioShowcase() {
                           <span>View on Instagram</span>
                         </a>
                         <a
-                          href={`https://wa.me/9192929406522?text=${encodeURIComponent(item.inquiryText)}`}
+                          href={`https://wa.me/919292940652?text=${encodeURIComponent(item.inquiryText)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="py-2.5 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
                           title="Inquire about this on WhatsApp"
                         >
-                          <MessageCircle className="w-4 h-4 fill-current" />
+                          <ArrowRight className="w-4 h-4" />
                         </a>
                       </div>
                     ) : (
@@ -903,14 +857,14 @@ export default function CareerPortfolioShowcase() {
                           <span>Inspect Sample</span>
                         </button>
                         <a
-                          href={`https://wa.me/9192929406522?text=${encodeURIComponent(item.inquiryText)}`}
+                          href={`https://wa.me/919292940652?text=${encodeURIComponent(item.inquiryText)}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="py-2.5 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
+                          className="py-2.5 px-3.5 rounded-xl bg-[#0B1B3D] hover:bg-[#11285A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 active:scale-95"
                           title="Inquire about this on WhatsApp"
                         >
-                          <MessageCircle className="w-4 h-4 fill-current" />
-                          <span className="hidden sm:inline">Order</span>
+                          <span>Order</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
                         </a>
                       </div>
                     )}
@@ -954,13 +908,13 @@ export default function CareerPortfolioShowcase() {
               <span>Visit Official Instagram</span>
             </a>
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20am%20exploring%20your%20career%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20expert."
+              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20am%20exploring%20your%20career%20portfolio%20and%20would%20like%20to%20consult%20with%20your%20expert."
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs text-center transition-all shadow-md hover:scale-[1.02] flex items-center justify-center gap-2"
             >
-              <MessageCircle className="w-4 h-4 fill-current" />
               <span>WhatsApp Consultation</span>
+              <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -1060,13 +1014,13 @@ export default function CareerPortfolioShowcase() {
                   Close (ESC)
                 </button>
                 <a
-                  href={`https://wa.me/9192929406522?text=${encodeURIComponent(selectedItem.inquiryText)}`}
+                  href={`https://wa.me/919292940652?text=${encodeURIComponent(selectedItem.inquiryText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-md flex items-center gap-2 hover:scale-[1.02]"
+                  className="px-5 py-2.5 rounded-xl bg-[#0B1B3D] hover:bg-[#11285A] text-white text-xs font-bold transition-all shadow-md flex items-center gap-2"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current" />
                   <span>Order on WhatsApp</span>
+                  <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>

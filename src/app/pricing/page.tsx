@@ -43,7 +43,7 @@ const cvPackages: PriceItem[] = [
       'Optimized section hierarchy & contact details',
       '1 free round of revision adjustments',
     ],
-    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20Normal%20Professional%20CV%20(499%20INR%20/%2025%20AED).',
+    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20Normal%20Professional%20CV%20(499%20INR%20/%2025%20AED).',
   },
   {
     id: 'ats-cv',
@@ -66,7 +66,7 @@ const cvPackages: PriceItem[] = [
       'Editable Word (.docx) & High-Res PDF formats',
       'Free revision support until satisfied',
     ],
-    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20(599%20INR%20/%2025%20AED).',
+    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20(599%20INR%20/%2025%20AED).',
   },
   {
     id: 'ats-cv-cover',
@@ -88,7 +88,7 @@ const cvPackages: PriceItem[] = [
       'Editable Word (.docx) & High-Res PDF formats',
       'Priority delivery & revision support',
     ],
-    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
+    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20the%20ATS-Friendly%20CV%20+%20Cover%20Letter%20(999%20INR%20/%2040%20AED).',
   },
 ];
 
@@ -112,7 +112,7 @@ const profileServices: PriceItem[] = [
       'Indeed resume upload & formatting check',
       'Recruiter visibility setting verification',
     ],
-    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20Indeed%20Profile%20Optimization%20(499%20INR%20/%2020%20AED).',
+    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20Indeed%20Profile%20Optimization%20(499%20INR%20/%2020%20AED).',
   },
   {
     id: 'naukri-opt',
@@ -155,7 +155,7 @@ const profileServices: PriceItem[] = [
       'Top 50 skills matrix for algorithmic matching',
       'Banner & featured section guidance',
     ],
-    ctaUrl: 'https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20LinkedIn%20Profile%20Optimization%20(970%20INR%20/%2040%20AED).',
+    ctaUrl: 'https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20LinkedIn%20Profile%20Optimization%20(970%20INR%20/%2040%20AED).',
   },
 ];
 
@@ -451,7 +451,7 @@ export default function PricingPage() {
                 </div>
 
                 <a
-                  href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20Recruitment,%20I%20would%20like%20to%20submit%20my%20CV%20for%20vacancies."
+                  href="https://wa.me/919292940652?text=Hello%20ILM-ON%20Recruitment,%20I%20would%20like%20to%20submit%20my%20CV%20for%20vacancies."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3.5 rounded-xl bg-teal-accent hover:bg-teal-accent/90 text-white font-bold text-xs shrink-0 transition-all shadow-md text-center"
@@ -538,7 +538,7 @@ export default function PricingPage() {
                 </div>
 
                 <a
-                  href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20we%20would%20like%20to%20discuss%20talent%20sourcing%20solutions."
+                  href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20we%20would%20like%20to%20discuss%20talent%20sourcing%20solutions."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3.5 rounded-xl bg-dark-950 hover:bg-vivid-blue text-white font-bold text-xs text-center transition-colors block"
@@ -589,7 +589,7 @@ export default function PricingPage() {
               </div>
 
               <a
-                href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20discuss%20Digital%20Setup%20packages."
+                href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20discuss%20Digital%20Setup%20packages."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-dark-950 hover:bg-vivid-blue text-white font-bold text-xs text-center transition-colors block"
@@ -644,7 +644,7 @@ export default function PricingPage() {
               </div>
 
               <a
-                href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20request%20a%20pricing%20quote%20for%20a%20Personal%20Portfolio%20Website."
+                href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20request%20a%20pricing%20quote%20for%20a%20Personal%20Portfolio%20Website."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-vivid-blue hover:bg-vivid-blue/90 text-white font-bold text-xs text-center transition-colors block shadow-md"
@@ -687,7 +687,7 @@ export default function PricingPage() {
               </div>
 
               <a
-                href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20discuss%20Meta%20Ads%20Management."
+                href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20discuss%20Meta%20Ads%20Management."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-dark-950 hover:bg-vivid-blue text-white font-bold text-xs text-center transition-colors block"

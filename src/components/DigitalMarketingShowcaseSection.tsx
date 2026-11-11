@@ -87,7 +87,7 @@ const CAMPAIGN_STEPS = [
 
 export default function DigitalMarketingShowcaseSection() {
   const marketingWhatsapp =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent(
       'Hello ILM-ON ADS ON Desk, I would like to inquire about digital marketing or web services.'
     );

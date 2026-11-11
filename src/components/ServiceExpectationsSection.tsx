@@ -68,7 +68,7 @@ const PILLARS: ExpectationPillar[] = [
     badge: 'PAYMENT SECURITY',
     title: 'Transparent, One-Time Pricing',
     description:
-      'Clear, upfront quotes with zero monthly subscriptions or paywalls. Verified payments via UPI & NetBanking (India / INR) and UAE Bank Transfer / Link (AED).',
+      'Clear, upfront quotes with zero monthly subscriptions or paywalls. Supported payments via UPI & NetBanking (India / INR) and UAE Bank Transfer / Link (AED).',
     guarantee: 'Zero hidden fees or recurring subscriptions',
     icon: ShieldCheck,
     iconBg: 'bg-emerald-50 border-emerald-200/80',
@@ -164,14 +164,14 @@ export default function ServiceExpectationsSection() {
               </div>
               <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 text-xs">
                 <a
-                  href="https://wa.me/9192929406522?text=Hello%20ILM%20ON%20Digital%20Solutions,%20I%20would%20like%20to%20get%20an%20ATS-friendly%20CV%20consultation."
+                  href="https://wa.me/919292940652?text=Hello%20ILM%20ON%20Digital%20Solutions,%20I%20would%20like%20to%20get%20an%20ATS-friendly%20CV%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-700/80 border border-slate-700 transition-all text-white font-medium group"
                 >
                   <div className="flex items-center gap-2">
                     <span>🇮🇳</span>
-                    <span>India Desk: +91 92929406522</span>
+                    <span>India Desk: +91 9292940652</span>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-[#0284F5] group-hover:translate-x-0.5 transition-transform" />
                 </a>

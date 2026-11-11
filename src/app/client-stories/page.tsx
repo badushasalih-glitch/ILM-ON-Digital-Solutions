@@ -7,52 +7,52 @@ import { Star, Play, Pause, ShieldCheck, MessageSquare, Volume2, ArrowRight, Che
 
 const fullReviews = [
   {
-    name: 'Mohamed Faizal Villan',
-    role: 'Operations & Site Manager',
-    company: 'Tier-1 Engineering Firm, UAE',
-    text: '“I had applied for multiple positions over 6 months with zero responses. Within 4 days of sending out the new ATS CV from ILM-ON, I received interview invites from two major firms in Dubai. Forwarded their contact to three of my colleagues immediately.”',
+    name: 'Rizwana V.',
+    role: 'WhatsApp Client Feedback',
+    company: 'ATS CV Service',
+    text: '“cv really worked very well. First day itself i got the call for interview. That too i was applying for that company past 4 months... Thank u so much”',
     rating: 5,
-    tag: 'ATS Optimization',
+    tag: 'Client Message',
   },
   {
-    name: 'Akhila Rajan',
-    role: 'Senior Financial Analyst',
-    company: 'GCC Banking & Finance',
-    text: '“Got a second call for interview today with my new resume! Thank you ILM-ON team for the fast turnaround and outstanding professionalism. The phrasing and format made a huge difference.”',
+    name: 'Razak S.',
+    role: 'Kuwait • Client Feedback',
+    company: 'ATS-Friendly CV & Cover Letter',
+    text: '“I\'m working here in Kuwait. for cv they charge toomuch I will sure recommend my friends. Thank you so much”',
     rating: 5,
-    tag: 'International Format',
+    tag: 'GCC Client Message',
   },
   {
-    name: 'Ameer Abbas',
-    role: 'Digital Marketing Strategist',
-    company: 'Riyadh, Saudi Arabia',
-    text: '“The complete career branding package completely transformed my LinkedIn presence. Recruiters from top Gulf firms started reaching out to me directly without me even submitting applications.”',
+    name: 'Mohammad S.',
+    role: 'WhatsApp Client Feedback',
+    company: 'ATS CV (PDF & Word .docx)',
+    text: '“Its really fantastic Thanks for ur support and patience”',
     rating: 5,
-    tag: 'Complete Branding',
+    tag: 'Client Message',
   },
   {
-    name: 'Soufian Mohamad',
-    role: 'Supply Chain Specialist',
-    company: 'Logistics Group, Dubai',
-    text: '“Extremely professional team. They understood the nuances of the Gulf market and how to properly frame my certifications and bilingual experience.”',
+    name: 'Salmanul F.',
+    role: 'India Desk • Client Feedback',
+    company: 'Career Document Service',
+    text: '“Thank you for the work Im very satisfied ❤️ Samabavam Nice aayind, njn friends nu ellam suggest cheyyam 👍🏻”',
     rating: 5,
-    tag: 'Gulf Career',
+    tag: 'Client Message',
   },
   {
-    name: 'Mohammad Sarkar',
-    role: 'Mechanical Project Engineer',
-    company: 'Industrial Sector, Abu Dhabi',
-    text: '“Fast delivery within hours just as promised. The ATS formatting was immaculate and the cover letter was tailored specifically to my target companies.”',
+    name: 'Teena A.',
+    role: 'WhatsApp Client Feedback',
+    company: 'ATS CV & Cover Letter (PDF & .docx)',
+    text: '“Thank you very much for quick response 😍”',
     rating: 5,
-    tag: 'Within Hours Delivery',
+    tag: 'Fast Turnaround',
   },
   {
-    name: 'Renuka HR',
-    role: 'Human Resources Business Partner',
-    company: 'Corporate Services',
-    text: '“As an HR professional myself, I can vouch for the caliber of their work. They know exactly how ATS algorithms parse content and what hiring managers look for in the first 5 seconds.”',
+    name: 'Gaurav K.',
+    role: 'Client Feedback Poster',
+    company: 'Career Document Service',
+    text: '“I will give you 5 star ratings ⭐⭐⭐⭐⭐”',
     rating: 5,
-    tag: 'HR Endorsement',
+    tag: '5-Star Rating',
   },
 ];
 
@@ -247,7 +247,7 @@ export default function ClientStoriesPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20would%20like%20a%20preliminary%20review%20of%20my%20CV."
+              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20would%20like%20a%20preliminary%20review%20of%20my%20CV."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all"

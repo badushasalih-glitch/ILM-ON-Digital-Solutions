@@ -69,7 +69,7 @@ export default function RecruitmentShowcaseSection() {
     encodeURIComponent('Hello ILM-ON Recruitment Desk, we have a hiring requirement for our company.');
 
   const candidateWhatsapp =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent('Hello ILM-ON Recruitment, I am a candidate looking for opportunities in India or the GCC.');
 
   return (

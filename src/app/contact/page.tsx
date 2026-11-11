@@ -20,7 +20,7 @@ export default function ContactPage() {
     const encoded = encodeURIComponent(
       `Hello ILM-ON Digital Solutions,\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.division}\n\nMessage: ${formData.message}`
     );
-    window.open(`https://wa.me/9192929406522?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/919292940652?text=${encoded}`, '_blank');
   };
 
   return (
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 <div className="space-y-1.5 text-xs text-slate-700">
                   <div className="flex items-center gap-2">
                     <Phone className="w-3.5 h-3.5 text-vivid-blue shrink-0" />
-                    <a href="https://wa.me/9192929406522" className="hover:text-vivid-blue font-bold">+91 92929406522</a> / <a href="https://wa.me/919526240652" className="hover:text-vivid-blue font-bold">+91 9526240652</a>
+                    <a href="https://wa.me/919292940652" className="hover:text-vivid-blue font-bold">+91 9292940652</a> / <a href="https://wa.me/919526240652" className="hover:text-vivid-blue font-bold">+91 9526240652</a>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
                     If WhatsApp did not automatically open on your device, please click the button below:
                   </p>
                   <a
-                    href="https://wa.me/9192929406522"
+                    href="https://wa.me/919292940652"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 rounded-xl text-xs font-bold bg-[#25D366] text-white hover:bg-[#20BD5A] shadow-sm transition-all"

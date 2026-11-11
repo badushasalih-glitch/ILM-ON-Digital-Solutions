@@ -199,7 +199,7 @@ export default function AtsCvSlider() {
           >
             {FEATURED_SLIDES.map((template) => {
               const whatsappOrderUrl =
-                'https://wa.me/9192929406522?text=' +
+                'https://wa.me/919292940652?text=' +
                 encodeURIComponent(
                   `Hello ILM-ON, I would like to order the ${template.name} (${template.format}).`
                 );
@@ -422,7 +422,7 @@ export default function AtsCvSlider() {
               <div className="pt-4 border-t border-slate-200">
                 <a
                   href={
-                    'https://wa.me/9192929406522?text=' +
+                    'https://wa.me/919292940652?text=' +
                     encodeURIComponent(
                       `Hello ILM-ON, I would like to order the ${activeModalSample.name} (${activeModalSample.format}).`
                     )

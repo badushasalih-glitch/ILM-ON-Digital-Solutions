@@ -7,7 +7,7 @@ import StickySupportPill from '@/components/StickySupportPill';
 export const metadata: Metadata = {
   title: 'Best ATS Friendly CV & Resume Writing Services | ILM ON Digital Solutions',
   description:
-    'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 92929406522) and UAE (+971 56 295 8907).',
+    'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 9292940652) and UAE (+971 56 295 8907).',
   keywords: [
     'ATS Friendly CV Services',
     'ATS Resume Writing Service',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best ATS Friendly CV & Resume Writing Services | ILM ON Digital Solutions',
     description:
-      'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 92929406522) and UAE (+971 56 295 8907).',
+      'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 9292940652) and UAE (+971 56 295 8907).',
     url: 'https://www.ilmondigitalsolutions.online/',
     siteName: 'ILM ON Digital Solutions',
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best ATS Friendly CV & Resume Writing Services | ILM ON Digital Solutions',
     description:
-      'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 92929406522) and UAE (+971 56 295 8907).',
+      'Get shortlisted with ATS-compliant resumes, Gulf & Europass formats, and executive LinkedIn optimization. Direct support via WhatsApp (+91 9292940652) and UAE (+971 56 295 8907).',
     images: ['/assets/brand/ilm-on-logo.png'],
   },
   icons: {
@@ -82,7 +82,7 @@ export default function RootLayout({
         url: 'https://www.ilmondigitalsolutions.online',
         logo: 'https://www.ilmondigitalsolutions.online/assets/brand/ilm-on-logo.png',
         image: 'https://www.ilmondigitalsolutions.online/assets/brand/ilm-on-logo.png',
-        telephone: '+9192929406522',
+        telephone: '+919292940652',
         priceRange: '$$',
         currenciesAccepted: 'INR, AED, USD',
         paymentAccepted: 'UPI, NetBanking, UAE Bank Transfer, Credit Card, Payment Link',
@@ -107,7 +107,7 @@ export default function RootLayout({
         contactPoint: [
           {
             '@type': 'ContactPoint',
-            telephone: '+9192929406522',
+            telephone: '+919292940652',
             contactType: 'customer service',
             areaServed: ['IN', 'Worldwide'],
             availableLanguage: ['English', 'Hindi', 'Malayalam'],

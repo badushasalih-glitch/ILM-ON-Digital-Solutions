@@ -261,7 +261,7 @@ export default function CVTemplatesPage() {
                         <span>Inspect Template</span>
                       </button>
                       <a
-                        href={`https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20to%20order%20my%20CV%20using%20the%20${encodeURIComponent(template.name)}%20template.`}
+                        href={`https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20to%20order%20my%20CV%20using%20the%20${encodeURIComponent(template.name)}%20template.`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="py-2.5 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
@@ -304,7 +304,7 @@ export default function CVTemplatesPage() {
 
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0 justify-center">
               <a
-                href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20have%20selected%20a%20CV%20template%20and%20want%20to%20order%20my%20resume%20writing."
+                href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20have%20selected%20a%20CV%20template%20and%20want%20to%20order%20my%20resume%20writing."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-xs text-center transition-all shadow-md flex items-center justify-center gap-2 hover:scale-[1.02]"
@@ -415,7 +415,7 @@ export default function CVTemplatesPage() {
                   Close (ESC)
                 </button>
                 <a
-                  href={`https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20want%20my%20CV%20written%20in%20this%20template:%20${encodeURIComponent(selectedTemplate.name)}.`}
+                  href={`https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20want%20my%20CV%20written%20in%20this%20template:%20${encodeURIComponent(selectedTemplate.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold transition-all shadow-md flex items-center gap-2 hover:scale-[1.02]"

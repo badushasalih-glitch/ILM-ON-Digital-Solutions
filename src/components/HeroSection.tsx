@@ -42,7 +42,7 @@ export default function HeroSection() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const whatsappIndiaUrl =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent('Hello ILM-ON, I would like to know more about your career services.');
 
   const whatsappUaeUrl =
@@ -173,10 +173,10 @@ export default function HeroSection() {
                 <span>
                   India Desk:{' '}
                   <a
-                    href="tel:+9192929406522"
+                    href="tel:+919292940652"
                     className="font-bold text-white hover:text-sky-300 transition-colors"
                   >
-                    +91 92929406522
+                    +91 9292940652
                   </a>
                 </span>
               </div>

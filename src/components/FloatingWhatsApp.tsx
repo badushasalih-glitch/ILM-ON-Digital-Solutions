@@ -41,7 +41,7 @@ export default function FloatingWhatsApp() {
 
             <div className="mt-4 space-y-2">
               <a
-                href="https://wa.me/9192929406522?text=Hello%20ILM-ON%20India%20Desk,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                href="https://wa.me/919292940652?text=Hello%20ILM-ON%20India%20Desk,%20I%20would%20like%20to%20inquire%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 rounded-xl bg-surface-light hover:bg-vivid-light/60 border border-slate-200/80 hover:border-vivid-blue/40 text-left transition-all group"
@@ -50,7 +50,7 @@ export default function FloatingWhatsApp() {
                   <span className="text-xl">🇮🇳</span>
                   <div>
                     <div className="text-xs font-bold text-dark-950 group-hover:text-vivid-blue">India Operations Desk</div>
-                    <div className="text-[11px] text-slate-500 font-medium">+91 92929406522 / 9526240652</div>
+                    <div className="text-[11px] text-slate-500 font-medium">+91 9292940652 / 9526240652</div>
                   </div>
                 </div>
                 <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-vivid-blue group-hover:translate-x-0.5 transition-all" />

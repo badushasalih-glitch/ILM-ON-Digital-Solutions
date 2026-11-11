@@ -317,7 +317,7 @@ export default function LinkedInShowcaseSlider() {
           >
             {DEMO_PROFILES.map((profile) => {
               const whatsappUrl =
-                'https://wa.me/9192929406522?text=' +
+                'https://wa.me/919292940652?text=' +
                 encodeURIComponent(
                   `Hello ILM-ON, I would like to optimize my LinkedIn Profile similar to the ${profile.role} showcase.`
                 );
@@ -596,7 +596,7 @@ export default function LinkedInShowcaseSlider() {
               <div className="pt-4 border-t border-slate-200">
                 <a
                   href={
-                    'https://wa.me/9192929406522?text=' +
+                    'https://wa.me/919292940652?text=' +
                     encodeURIComponent(
                       `Hello ILM-ON, I would like to order LinkedIn Profile Optimization for the ${activeModalProfile.role} profile level.`
                     )

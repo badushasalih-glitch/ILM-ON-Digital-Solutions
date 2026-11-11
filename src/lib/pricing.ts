@@ -69,9 +69,9 @@ export const BUSINESS_POLICIES: BusinessPolicyConfig = {
     'ILM-ON Digital Solutions provides professional document formatting, keyword optimization, and career advisory services. We do not guarantee job placements, interview callbacks, specific ATS scores, or hiring decisions, as these remain solely at the discretion of employers and recruitment algorithms.',
   contacts: {
     indiaDesk: {
-      phone: '+9192929406522',
-      displayPhone: '+91 92929406522',
-      whatsappUrl: 'https://wa.me/9192929406522',
+      phone: '+919292940652',
+      displayPhone: '+91 9292940652',
+      whatsappUrl: 'https://wa.me/919292940652',
     },
     uaeDesk: {
       phone: '+971562958907',

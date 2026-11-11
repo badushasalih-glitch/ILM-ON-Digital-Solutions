@@ -103,7 +103,7 @@ export default function DigitalMarketingPage() {
               {/* CTAs & Social Links */}
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://wa.me/9192929406522?text=Hello%20ADS%20ON,%20I%20want%20to%20discuss%20a%20creative%20advertising%20campaign%20for%20my%20business."
+                  href="https://wa.me/919292940652?text=Hello%20ADS%20ON,%20I%20want%20to%20discuss%20a%20creative%20advertising%20campaign%20for%20my%20business."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all hover:scale-[1.02]"
@@ -412,7 +412,7 @@ export default function DigitalMarketingPage() {
 
                   <div className="space-y-3 pt-2">
                     <a
-                      href="https://wa.me/9192929406522?text=Hello%20ADS%20ON,%20I%20would%20like%20a%20Custom%20Quote%20for%20a%20Personal%20Portfolio%20Website."
+                      href="https://wa.me/919292940652?text=Hello%20ADS%20ON,%20I%20would%20like%20a%20Custom%20Quote%20for%20a%20Personal%20Portfolio%20Website."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3.5 rounded-xl bg-vivid-blue hover:bg-vivid-blue/90 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
@@ -452,7 +452,7 @@ export default function DigitalMarketingPage() {
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ADS%20ON,%20I%20would%20like%20to%20schedule%20a%20digital%20campaign%20consultation."
+              href="https://wa.me/919292940652?text=Hello%20ADS%20ON,%20I%20would%20like%20to%20schedule%20a%20digital%20campaign%20consultation."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all hover:scale-[1.02]"

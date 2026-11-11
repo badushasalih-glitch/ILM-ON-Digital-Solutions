@@ -12,55 +12,72 @@ import {
 } from 'lucide-react';
 
 const ROLES_TO_CYCLE = [
-  'Procurement Coordinator in UAE',
-  'Sales Executive in Kerala',
-  'Supply Chain & Logistics Lead',
-  'Digital Marketing Specialist',
-  'Senior Accountant in Dubai',
-  'HR Operations Executive',
+  'Supply Chain Specialist',
+  'Sales Executive',
+  'Procurement Coordinator',
+  'Digital Marketer',
+  'Fresh Graduate',
+];
+
+const HERO_TICKER_ITEMS = [
+  { label: 'ATS CVS', dot: 'bg-[#0284F5]' },
+  { label: 'EUROPASS FORMAT', dot: 'bg-cyan-400' },
+  { label: 'GCC & UAE FORMATS', dot: 'bg-teal-400' },
+  { label: 'LINKEDIN OPTIMIZATION', dot: 'bg-blue-400' },
+  { label: 'COVER LETTERS', dot: 'bg-emerald-400' },
+  { label: 'NAUKRI GULF & INDEED', dot: 'bg-sky-400' },
+  { label: 'PERSONAL PORTFOLIO SITES', dot: 'bg-amber-400' },
+  { label: 'WORD + PDF DELIVERY', dot: 'bg-indigo-400' },
 ];
 
 export default function SkilleazeHeroSection() {
-  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [typingSpeed, setTypingSpeed] = useState(70);
   const shouldReduceMotion = useReducedMotion();
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState(ROLES_TO_CYCLE[0]);
+  const [isDeleting, setIsDeleting] = useState(true);
+  const [typingSpeed, setTypingSpeed] = useState(1800);
 
-  // Smooth typewriter effect cycling through targeted Gulf and Indian roles
+  // Smooth typewriter effect cycling through real target roles; static under reduced motion
   useEffect(() => {
+    if (shouldReduceMotion) {
+      setDisplayedText(ROLES_TO_CYCLE[0]);
+      return;
+    }
+
     const fullRole = ROLES_TO_CYCLE[currentRoleIndex];
 
     const timer = setTimeout(() => {
       if (!isDeleting) {
-        setDisplayedText(fullRole.substring(0, displayedText.length + 1));
-        if (displayedText.length + 1 === fullRole.length) {
+        const nextLen = displayedText.length + 1;
+        setDisplayedText(fullRole.substring(0, nextLen));
+        if (nextLen === fullRole.length) {
           setTypingSpeed(1800);
           setIsDeleting(true);
         } else {
-          setTypingSpeed(60);
+          setTypingSpeed(55);
         }
       } else {
-        setDisplayedText(fullRole.substring(0, displayedText.length - 1));
-        if (displayedText.length === 0) {
+        const nextLen = Math.max(0, displayedText.length - 1);
+        setDisplayedText(fullRole.substring(0, nextLen));
+        if (nextLen === 0) {
           setIsDeleting(false);
           setCurrentRoleIndex((prev) => (prev + 1) % ROLES_TO_CYCLE.length);
-          setTypingSpeed(300);
+          setTypingSpeed(260);
         } else {
-          setTypingSpeed(30);
+          setTypingSpeed(28);
         }
       }
     }, typingSpeed);
 
     return () => clearTimeout(timer);
-  }, [displayedText, isDeleting, currentRoleIndex, typingSpeed]);
+  }, [displayedText, isDeleting, currentRoleIndex, typingSpeed, shouldReduceMotion]);
 
   const whatsappUrl =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent('Hello ILM ON Digital Solutions, I would like to get an ATS-friendly CV consultation.');
 
   const reviewModalUrl =
-    'https://wa.me/9192929406522?text=' +
+    'https://wa.me/919292940652?text=' +
     encodeURIComponent('Hello ILM ON Digital Solutions, I would like to request a Free CV Review for my current resume.');
 
   return (
@@ -79,9 +96,9 @@ export default function SkilleazeHeroSection() {
 
           {/* Primary Editorial Serif Headline */}
           <h1 className="font-serif-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#0B1B3D] tracking-tight leading-[1.12] mb-6">
-            Your experience is valuable.{' '}
+            Your skills are real.{' '}
             <span className="italic font-normal block sm:inline text-[#0284F5]">
-              Let your resume prove it.
+              Now make them work for you.
             </span>
           </h1>
 
@@ -90,7 +107,7 @@ export default function SkilleazeHeroSection() {
             ATS resumes, strategic cover letters, and profile positioning tailored for Gulf, European, and Indian hiring teams.
           </p>
 
-          {/* Interactive Dynamic Focus Card */}
+          {/* Interactive Dynamic Role Card */}
           <div className="w-full max-w-xl mx-auto mb-10">
             <div className="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] text-left relative overflow-hidden group">
               {/* Header Indicator */}
@@ -114,7 +131,9 @@ export default function SkilleazeHeroSection() {
                 <span className="font-serif-display text-xl sm:text-2xl lg:text-3xl font-bold text-[#0B1B3D] tracking-tight">
                   {displayedText}
                 </span>
-                <span className="inline-block w-0.5 h-6 bg-[#0284F5] ml-1 motion-safe:animate-pulse" />
+                {!shouldReduceMotion && (
+                  <span className="inline-block w-0.5 h-6 bg-[#0284F5] ml-1 motion-safe:animate-pulse" />
+                )}
               </div>
 
               {/* Badges inside card */}
@@ -142,7 +161,7 @@ export default function SkilleazeHeroSection() {
             </div>
           </div>
 
-          {/* CTA Button Group (Neutral arrows cleanly used; WhatsApp logo reserved strictly for the floating contact button) */}
+          {/* CTA Button Group (WhatsApp logo reserved strictly for the floating contact button) */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-lg mb-8">
             <a
               href={whatsappUrl}
@@ -175,24 +194,26 @@ export default function SkilleazeHeroSection() {
             </a>
           </div>
 
-          {/* Clean Redesigned Official Brand Logo & Entry-Level Starting Price Lockup */}
+          {/* Circular Official Brand Emblem & Entry-Level Starting Price Lockup */}
           <motion.div
-            initial={shouldReduceMotion ? false : { opacity: 0, y: 14 }}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: shouldReduceMotion ? 0 : 0.55, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: shouldReduceMotion ? 0 : 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="w-full max-w-xl mx-auto"
           >
             <div className="bg-white rounded-2xl border border-slate-200/90 p-4 sm:px-6 sm:py-5 shadow-[0_8px_24px_rgba(11,27,61,0.06)] flex flex-col sm:flex-row items-center gap-4 sm:gap-5">
-              {/* Official Brand Logo Asset preserving proportions and brand colors */}
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 bg-[#1206A8] shadow-sm ring-1 ring-slate-200/80">
-                <Image
-                  src="/assets/brand/ilm-on-logo.png"
-                  alt="ILM-ON Digital Solutions Official Logo"
-                  fill
-                  priority
-                  sizes="80px"
-                  className="object-contain"
-                />
+              {/* Circular Official Brand Logo Badge matching round Splash identity */}
+              <div className="p-1.5 rounded-full border border-slate-200/90 bg-slate-50 shrink-0 shadow-xs">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden bg-[#1800AD]">
+                  <Image
+                    src="/assets/brand/ilm-on-logo.png"
+                    alt="ILM-ON Digital Solutions Official Logo"
+                    fill
+                    priority
+                    sizes="80px"
+                    className="object-contain p-1.5"
+                  />
+                </div>
               </div>
 
               {/* Balanced Entry Pricing Breakdown */}
@@ -220,80 +241,29 @@ export default function SkilleazeHeroSection() {
         </div>
       </div>
 
-      {/* Infinite Horizontal Ticker Marquee Ribbon */}
+      {/* Restrained Services Ticker Strip */}
       <div className="mt-14 bg-[#0B1B3D] text-white py-3.5 overflow-hidden border-y border-white/10 select-none">
-        <div className="animate-marquee-scroll flex items-center gap-8 whitespace-nowrap text-xs font-extrabold uppercase tracking-widest text-slate-200">
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0284F5]" />
-            ATS RESUME
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-            EUROPASS FORMAT
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-            GULF &amp; UAE STANDARDS
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-            LINKEDIN OPTIMIZATION
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            24–48H FAST DELIVERY
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-            EDITABLE WORD + PDF
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
-            7-DAY FREE REVISIONS
-          </span>
-          <span className="text-slate-500">•</span>
-
-          {/* Duplicate set for seamless infinite scroll */}
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0284F5]" />
-            ATS RESUME
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-            EUROPASS FORMAT
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-            GULF &amp; UAE STANDARDS
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-            LINKEDIN OPTIMIZATION
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            24–48H FAST DELIVERY
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-            EDITABLE WORD + PDF
-          </span>
-          <span className="text-slate-500">•</span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
-            7-DAY FREE REVISIONS
-          </span>
+        <div className="animate-marquee-scroll flex items-center gap-8 whitespace-nowrap text-xs font-extrabold uppercase tracking-widest text-slate-200 px-4">
+          {HERO_TICKER_ITEMS.map((item) => (
+            <React.Fragment key={`t1-${item.label}`}>
+              <span className="flex items-center gap-2 shrink-0">
+                <span className={`w-1.5 h-1.5 rounded-full ${item.dot}`} />
+                {item.label}
+              </span>
+              <span className="text-slate-500" aria-hidden="true">•</span>
+            </React.Fragment>
+          ))}
+          {HERO_TICKER_ITEMS.map((item, idx) => (
+            <React.Fragment key={`t2-${item.label}`}>
+              <span className="flex items-center gap-2 shrink-0 motion-reduce:hidden" aria-hidden="true">
+                <span className={`w-1.5 h-1.5 rounded-full ${item.dot}`} />
+                {item.label}
+              </span>
+              {idx < HERO_TICKER_ITEMS.length - 1 && (
+                <span className="text-slate-500 motion-reduce:hidden" aria-hidden="true">•</span>
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </section>

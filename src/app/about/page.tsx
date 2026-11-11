@@ -221,7 +221,7 @@ export default function AboutPage() {
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ILM-ON,%20I%20would%20like%20to%20discuss%20career%20or%20business%20solutions."
+              href="https://wa.me/919292940652?text=Hello%20ILM-ON,%20I%20would%20like%20to%20discuss%20career%20or%20business%20solutions."
               target="_blank"
               rel="noopener noreferrer"
               className="px-7 py-3.5 rounded-xl text-xs font-bold bg-vivid-blue hover:bg-vivid-blue/90 text-white shadow-md transition-all"

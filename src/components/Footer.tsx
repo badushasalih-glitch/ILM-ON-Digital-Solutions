@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="https://wa.me/9192929406522?text=Hello%20ILM%20ON%20Digital%20Solutions,%20I%20would%20like%20to%20consult%20with%20your%20team."
+              href="https://wa.me/919292940652?text=Hello%20ILM%20ON%20Digital%20Solutions,%20I%20would%20like%20to%20consult%20with%20your%20team."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold bg-[#25D366] hover:bg-[#20BD5A] text-white shadow-sm transition-all"
@@ -175,8 +175,8 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-vivid-blue shrink-0 mt-0.5" />
                 <div>
                   <div className="text-[11px] text-slate-500 uppercase font-semibold">India Desk (Primary):</div>
-                  <a href="https://wa.me/9192929406522" className="text-slate-300 hover:text-vivid-blue font-medium">
-                    +91 92929406522
+                  <a href="https://wa.me/919292940652" className="text-slate-300 hover:text-vivid-blue font-medium">
+                    +91 9292940652
                   </a>
                 </div>
               </li>

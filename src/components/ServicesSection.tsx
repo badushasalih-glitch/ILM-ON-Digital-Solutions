@@ -116,7 +116,7 @@ export default function ServicesSection() {
                   : 'text-slate-600 hover:text-dark-950 hover:bg-slate-50'
               }`}
             >
-              CV & Resumes
+              01 • CV &amp; Resumes
             </button>
             <button
               onClick={() => setActiveCategory('profile')}
@@ -126,7 +126,7 @@ export default function ServicesSection() {
                   : 'text-slate-600 hover:text-dark-950 hover:bg-slate-50'
               }`}
             >
-              Profile Optimization
+              02 • Profile Optimization
             </button>
             <button
               onClick={() => setActiveCategory('bundle')}
@@ -136,7 +136,7 @@ export default function ServicesSection() {
                   : 'text-slate-600 hover:text-dark-950 hover:bg-slate-50'
               }`}
             >
-              Value Bundles
+              03 • Value Bundles
             </button>
           </div>
         </div>
@@ -186,8 +186,15 @@ export default function ServicesSection() {
                     )}
                   </div>
 
-                  {/* Title & Turnaround */}
+                  {/* Numbered Category & Title */}
                   <div className="mb-3">
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
+                      {service.category === 'cv'
+                        ? '01 • CV & Resumes'
+                        : service.category === 'profile'
+                        ? '02 • Profile Optimization'
+                        : '03 • Value Bundles'}
+                    </div>
                     <h3 className="text-base sm:text-lg font-bold text-dark-950 leading-snug">
                       {service.name}
                     </h3>
@@ -254,7 +261,7 @@ export default function ServicesSection() {
                       href={
                         currency === 'AED'
                           ? 'https://wa.me/971562958907?text=Hello%20ILM%20ON%20Digital%20Solutions,%20I%20would%20like%20an%20ATS%20CV%20consultation%20for%20the%20UAE/Gulf%20market.'
-                          : `https://wa.me/9192929406522?text=${encodeURIComponent(
+                          : `https://wa.me/919292940652?text=${encodeURIComponent(
                               `Hello ILM ON Digital Solutions, I would like to get an ATS-friendly CV consultation for ${service.name}.`
                             )}`
                       }

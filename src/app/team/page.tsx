@@ -17,7 +17,7 @@ const teamMembers = [
       'Extensive corporate partner network across UAE & GCC ecosystem',
       'Directing international recruitment consultancy standards',
     ],
-    whatsapp: 'https://wa.me/9192929406522?text=Hello%20Badusha%20Salih,%20I%20would%20like%20to%20connect%20with%20ILM-ON.',
+    whatsapp: 'https://wa.me/919292940652?text=Hello%20Badusha%20Salih,%20I%20would%20like%20to%20connect%20with%20ILM-ON.',
   },
   {
     name: 'Fathima',
@@ -32,7 +32,7 @@ const teamMembers = [
       'Candidate support workflows ensuring fast 24-hour turnaround',
       'Seamless multi-desk coordination between India and Dubai',
     ],
-    whatsapp: 'https://wa.me/9192929406522?text=Hello%20Fathima,%20I%20would%20like%20to%20connect%20regarding%20career%20services.',
+    whatsapp: 'https://wa.me/919292940652?text=Hello%20Fathima,%20I%20would%20like%20to%20connect%20regarding%20career%20services.',
   },
   {
     name: 'Mohamed Sanif',
@@ -164,7 +164,7 @@ export default function TeamPage() {
             </span>
             <span className="flex items-center gap-1.5 text-dark-950">
               <span className="w-2 h-2 rounded-full bg-vivid-blue" />
-              India Desk: +91 92929406522
+              India Desk: +91 9292940652
             </span>
             <span className="flex items-center gap-1.5 text-slate-500">
               info@ilmondigitalsolutions.online
